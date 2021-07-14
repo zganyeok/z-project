@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* css는 항상;으로 마감을 한다 */
+/* reset */
+/* *{margin:바깥여백;padding:안쪽여백} */
+*{margin: 0;padding: 0;}
+.blind { position:absolute; top: 0; left: 0; overflow:hidden;  text-indent:-999999999px; width: 0;height: 0; font-size: 0;}
+body {background: url("../images/bg3.gif")repeat-x;}
+/* ../ <폴더 바깥으로 나오기 */
+/* repeat-x x방향으로만 반복 */
+ul, li {margin: 0;padding: 0; list-style: none;}
+/* width가 정해져야 중앙정렬가능, 높이값은 무의미 */
+a {text-decoration: none;}
+/* a {text-decoration: none;} 링크 줄 없애기 */
+
+#wrap {width: 1200px; margin:0 auto;}
+/* margin 0 auto;(2개) -> 상,하 여백: 0 + 좌,우 여백 : auto는 중앙정렬 */
+/* margin 50px 30px 50px 150px;(4개) -> 상, 오, 하, 왼 */
+
+/* wrap에서 width가 설정돼서 height만 설정 */
+/* header */
+#wrap header {height: 120px ;background: #fff; position: fixed; width: 100%; top:0; left: 0;  
+    z-index: 200;}
+
+#wrap header .innerheader { width: 1200px; height: 100%; margin: 0 auto;}
+
+
+#wrap header .logo {width: 300px;height: 120px; float: left;}
+#wrap header .logo a {font-size: 35px; line-height: 120px;
+font-weight: bold; color:#F4A7BA; text-shadow:2px 2px 1.5px rgb(53, 53, 53);}
+#wrap header .logo a:hover {color:black; text-shadow:2px 2px 3px #F4A7BA;}
+
+/* menu */
+#wrap header .menu {width: 900px;height: 120px; float: left;}
+#wrap header .menu ul{float: right;}
+#wrap header .menu ul li{float: left; margin-right:30px;height: 120px; line-height: 120px;}
+#wrap header .menu ul li a{color:black; font-size: 20px; font-weight: bold;}
+
+#wrap header .menu li a:hover{color:#F3A6BB; border-bottom: 3px solid #000;
+padding-bottom: 2px;}
+/*          △띄어쓰기는 하위영역 */
+
+/* contents */
+#wrap section.me {height: 600px; background: rgb(240, 240, 240); margin-top: 120px;}
+
+#wrap section.info {height: 400px; background: #fff;}
+
+/* 공지사항 */
+#wrap section.info .notice {font-family: 'Nanum Gothic';width: 600px; height: 400px; float:left;background:url(../images/all_bg.jpg);}
+#wrap section.info .notice h1 {font-size: 25px; color:rgb(54, 38, 82); margin: 15px 0px 0px 5px;} 
+#wrap section.info .notice ul li {height: 40px; line-height: 40px; border-bottom: 1px dotted rgb(101, 77, 129);margin-left: 5px;}
+/* dotted : 점선  */
+#wrap section.info .notice ul li a {color: rgb(38, 29, 65); padding-left: 4px;}
+#wrap section.info .notice ul li a:hover {text-decoration: underline;}
+#wrap section.info .notice ul li span {float: right; padding-right: 50px; color: #e9ced5; font-size: 12px;opacity: 0.8;}
+#wrap section.info .notice ul li .a1 {float: left; color: rgb(48, 14, 126); font-size: 16px;}
+#wrap section.info .notice ul li .a2 {float: left; color: rgb(48, 14, 126); font-size: 16px;}
+#wrap section.info .notice ul li .a3 {float: left; color: rgb(48, 14, 126); font-size: 16px;}
+
+/* 로제컴백 */
+#wrap section.info .banner {width: 600px; height: 400px; float:right;}
+
+
+#wrap section.photo {height: 600px;background: #999;}
+#wrap section.photo ul li{width: 300px;height: 300px; overflow: hidden; display: block; float:left;}
+#wrap section.photo ul li a img{transition: all .6s;}
+#wrap section.photo ul li a:hover img{transform: scale(1.05);}
+#wrap section.photo a img{display: block; float:left; }
+
+/* #wrap section.photo img{display: block; float:left;} 좁은 여백 없애기 */
+/*              △붙어있으면 자기자신 */
+
+/* footer */
+#wrap footer {height: 120px; }
+/* border-top:1px solid #999; background:#fff;box-sizing: border-box; */
+/* solid 한줄넣겠다  */
+/* box-sizing : border-box; 여백과 선을 기본 사이즈에 포함 */
+
+#wrap footer p {line-height: 1.7; font-size: 14px; color: #999; text-align: center; margin-top: 25px;}
+#wrap footer p a {color:black;}
+#wrap footer p a:hover { text-decoration: underline; color: #999;} /*링크에 라인넣기} */
+
+
+#wrap footer .blogo{width: 250px; height: 120px;float: left;  margin-top: 30px;}
+#wrap footer .blogo a{font-size: 25px;
+    font-weight: bold; color:rgb(150, 150, 150);}
+#wrap footer .Copyright{width: 700px; height: 120px;float: left;}
+#wrap footer .sns{width: 250px; height: 120px;float: left;}
+
+#wrap footer .sns ul{float:right;}
+#wrap footer .sns ul li{float:left; margin: 30px 0 0 10px;}
+#wrap footer .sns ul li img:hover{opacity: 0.5;}
