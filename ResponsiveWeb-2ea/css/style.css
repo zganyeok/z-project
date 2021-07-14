@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0;padding: 0;}
+ul, li{margin: 0;padding: 0; list-style: none;}
+a{text-decoration: none; }
+
+
+  .bl{position: fixed; top: -100px;} /*블라인드*/
+
+  /* all device */
+#wrap header{width: 100%; height: 70px; background: #ddd;}
+
+#wrap header .logo{ height: 70px; background: rgb(74, 221, 140); float: left;}
+#wrap header .menu{ height: 70px; background: rgb(177, 221, 74); float: left;}
+
+#wrap header .menu ul li{width: 20%; height: 70px; line-height: 70px; float: left;}
+#wrap header .menu ul li a{display: block; background: rgb(177, 221, 74); color: #fff; text-align: center; font-weight: bold;}
+#wrap header .menu ul li a:hover{background: rgb(140, 175, 59);}
+
+/* .text{font-size: 8em;} /*16 x 8 = 128px*/
+/* .text p{font-size: 0.5em;} */
+
+
+#wrap aside.lnb{background: rgb(194, 231, 180);}
+#wrap .center{background: rgb(130, 214, 33);}
+#wrap aside.banner{background: rgb(194, 231, 180);}
+#wrap aside.banner ul li{border: 1px solid rgb(139, 184, 113); box-sizing: border-box;}
+#wrap aside.banner ul li a{display: block; background: rgb(211, 221, 74); color: #fff; text-align: center; font-weight: bold;}
+#wrap aside.banner ul li a:hover{background: rgb(180, 189, 63);}
+
+
+footer{ width: 100%; height: 70px; background: #ddd;}
+#wrap section:after{content: ''; display: block; clear: both;}
+
+  /* mobile */
+@media only screen and (max-width:740px) {
+.logo, .menu{width: 100%;}
+
+#wrap aside.lnb{width: 100%; height: 500px;}
+#wrap .center{width: 100%; height: 500px;}
+#wrap aside.banner{width: 100%; height: 500px;}
+#wrap aside.banner ul li{width: 100%; height: 100px; line-height: 100px; }
+}
+
+  /* tablet */
+@media only screen and (min-width:741px) {
+.logo{width: 30%;}
+.menu{width: 70%;}
+#wrap aside.lnb{width: 30%; height: 600px; float: left;}
+#wrap .center{width: 70%; height: 600px; float: left;}
+#wrap aside.banner{width: 100%; height: 200px; float: left;}
+#wrap aside.banner ul li{width: 20%; height: 200px; line-height: 200px; float: left; }
+}
+
+  /* pc */
+@media only screen and (min-width:1024px) {
+#wrap aside.lnb{width: 20%; height: 900px; float: left;}
+#wrap .center{width: 60%; height: 900px; float: left;}
+#wrap aside.banner{width: 20%; height: 900px; float: left;}
+#wrap aside.banner ul li{width: 100%; height: 80px; line-height: 80px; }
+}

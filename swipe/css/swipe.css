@@ -1,0 +1,16 @@
+/* reset */
+*{margin: 0;padding: 0;}
+ul, li{margin: 0;padding: 0; list-style: none;}
+a, img{display: block;}
+
+/* 제목 */
+h1{text-align: center; font-size: 33px; color: #212121; margin: 50px;}
+
+/* 이미지 */
+#mySwipe{max-width: 1200px; margin: 0 auto;}
+#mySwipe img{width: 100%; max-width: 100%;}
+.swipe{overflow: hidden; position: relative;}
+.swipe li{float: left;width: 100%; position: relative;}
+
+/* 버튼 */
+.btn_wrap{text-align: center; margin-top: 20px;}

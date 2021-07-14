@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* 주조색 : #00C73C / 보조색 : #737373 */
+
+/* reset */
+*{margin: 0;padding: 0;}
+body{background: #FFFFFF;}
+ul,li{list-style: none; margin: 0;padding: 0;}
+a{color: #333333; text-decoration: none; display: block;}
+img:hover{opacity: 0.8;}
+
+#wrap{width: 1200px; margin: 0 auto;}
+#wrap header{width: 1200px; height: 100px;}
+#wrap header .logo{width: 200px; height: 100px;  float: left;}
+#wrap header .logo a{margin-top: 30px;}
+#wrap header .menu{width: 1000px; height: 100px;  float: left;}
+#wrap header .menu nav{float: right; width: 640px;  z-index: 999;}
+#wrap header .menu nav>ul>li{position: relative; float: left; width: 160px; height: 40px; line-height: 40px; margin-top: 60px; background: #737373;}
+#wrap header .menu nav>ul>li:hover{background: #00c73c;}
+#wrap header .menu nav>ul>li>a{ font-size: 14px; font-weight: bold; color: #fff; text-align: center;}
+#wrap header .menu .submenu{background: #00c73c; height: 160px; display: none;}
+#wrap header .menu .submenu li{background: #00c73c; width: 160px; height: 40px;line-height: 40px;}
+#wrap header .menu .submenu li:hover{background: #00b135; font-weight: bold;}
+#wrap header .menu .submenu>li>a{font-size: 13px;  color: #fff; text-align: center;}
+#wrap header .menu nav>ul>li:first-child ul.submenu{position: absolute; left: -560px; top: 40px; width: 620px; height: 160px; padding-left: 560px; background: #00c73c;}
+
+
+#wrap #center{width: 1200px; height: 500px;}
+#wrap .slider{width: 1200px; height: 300px; background: #888; z-index: -1; overflow: hidden; position: relative;}
+#wrap .slider .sliderList{width: 1200px; height: 900px; position: absolute; top: 0;left: 0;}
+
+#wrap .slider img{display: block;}
+
+#wrap .con{width: 1200px; height: 200px; }
+#wrap .con h1{font-size: 20px; font-weight: bold; color: #333333; }
+#wrap .con .notice{width: 400px; height: 200px; float: left;}
+#wrap .con .notice li{height: 33px; line-height: 33px; box-sizing: border-box; border-bottom: 1px dotted #9292926e; padding:0 5px;}
+#wrap .con .notice li:hover{background: #00c73c;}
+#wrap .con .notice li:hover a{  color: #fff;}
+#wrap .con .notice li:hover span{  color: #fff;}
+#wrap .con .notice li a{color: #333333; font-size: 14px; float: left; display: block;}
+#wrap .con .notice li span{color: #666; font-size: 12px; float: right;}
+
+#wrap .con .banner{width: 400px; height: 200px; float: left;}
+#wrap .con .banner ul{padding:10px 0 0 10px;}
+#wrap .con .banner ul li{float: left; margin-right: 6px;}
+#wrap .con .banner ul li a img{ width: 120px; height: 160px; display: block; border: 2px solid #ddd;}
+
+#wrap .con .go{width: 400px; height: 200px;  float: left;}
+
+#wrap footer{ width: 1200px; height: 100px; clear: both;}
+#wrap footer .copyright{width: 1000px; height: 100px; float: left;}
+#wrap footer .copyright p{font-size: 14px; color: #666; width: 1000px; margin-top: 43px; text-align: center; }
+#wrap footer .bcon{width: 200px; height: 100px;  float: left;}
+#wrap footer .sns{width:200px; height: 50px;}
+#wrap footer .sns ul{float: right;}
+#wrap footer .sns ul li{float: left; margin:10px 0 0 11px;}
+#wrap footer .sns ul li img:hover{opacity: .7;}
+
+
+#wrap footer .family{width: 200px; height: 50px;}
+#wrap footer .family select{float: right; border: 1px solid #d1d1d1; margin-top: 15px; font-size: 12px; width: 160px; height: 20px; border-radius: 5px; color: #333333;}
+
+/* #popUp{width: 500px; height: 400px; background: #fff; border: 3px solid #00c73c; }
+#popUp .title{width: 500px; height: 80px; background: #00c73c; position: relative;}
+#popUp .title p{ color: #fff; font-size: 25px; font-weight: bold; text-align: center; width: 500px; position: absolute; top: 22px;}
+#popUp .close{width: 23px; height: 23px; font-size: 20px; background: rgb(214, 18, 18); color: #fff;} */
+
+#popUp{ width: 500px;height: 400px; border: 3px solid #00c73c; background: #fff; position: absolute; top: 300px; left: 50%; transform: translate(-50%, -50%); z-index: 9999; display: none;}
+#popUp p{font-size: 25px; width: 500px; height: 80px;line-height: 80px; text-align: center; background: #00c73c; color: #ffffff; font-weight: bold;}
+#popUp .close{font-size: 30px; text-align: center; color: #fff;position: absolute; right:20px;top: 0px; cursor: pointer;}
+#popUp .text{ text-align: center; font-size: 16px; padding-top: 40px;}

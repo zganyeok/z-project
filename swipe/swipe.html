@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swipeSlider</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/swipe.js"></script>
+    <script src="js/sw.js"></script>
+    <link rel="stylesheet" href="css/swipe.css">
+</head>
+<body>
+    <h1>swipe slider</h1>
+    <div id="mySwipe" class="swipe"> <!--스크립트에서 따로 잡아줘야되서 구분-->
+        <ul class="swipe-wrap">
+            <li><a href="#"><img src="images/pic_1.jpg" alt="사진1"></a></li>
+            <li><a href="#"><img src="images/pic_2.jpg" alt="사진2"></a></li>
+            <li><a href="#"><img src="images/pic_3.jpg" alt="사진3"></a></li>
+            <li><a href="#"><img src="images/pic_4.jpg" alt="사진4"></a></li>
+        </ul>
+    </div>
+    <!-- 이전,다음 버튼배치 -->
+    <!-- .btn_wrap>button.prevBtn{prev} -->
+    <div class="btn_wrap">
+        <button class="prevBtn">prev</button>
+        <button class="nextBtn">next</button>
+    </div>
+</body>
+</html>
