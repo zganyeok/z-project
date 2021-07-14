@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지강혁 - lotteWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function openNav(){
+            document.getElementById('myNav').style.width='100%';
+        }
+        function closeNav(){
+            document.getElementById('myNav').style.width='0%';
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <!-- mobile menu : 햄버거버튼과 클릭 시 나오는 메뉴 -->
+            <!-- btn -->
+            <div class="tg">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+            <!-- box -->
+            <div id="myNav" class="overlay">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                <ul>
+                    <li><a href="#">즐길거리</a></li>
+                    <li><a href="#">참여프로그램</a></li>
+                    <li><a href="#">이용가이드</a></li>
+                    <li><a href="#">소통서비스</a></li>
+                </ul>
+                </div>
+
+            </div>
+            <!-- pc menu -->
+            <div class="menu">
+                <ul>
+                    <li><a href="#">즐길거리</a></li>
+                    <li><a href="#">참여프로그램</a></li>
+                    <li><a href="#">이용가이드</a></li>
+                    <li><a href="#">소통서비스</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="contents">
+        <aside class="lnb">
+            <ul>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+                <li><a href="#">Menu4</a></li>
+                <li><a href="#">Menu5</a></li>
+                <li><a href="#">Menu6</a></li>
+                <li><a href="#">Menu7</a></li>
+             
+            </ul>
+        </aside>
+    
+        <div class="center">
+            
+        </div>
+        <aside class="banner">
+            <ul>
+                <li><a href="#">Banner1</a></li>
+                <li><a href="#">Banner2</a></li>
+                <li><a href="#">Banner3</a></li>
+            </ul>
+        </aside>
+    </div>
+        <footer>
+            <p>
+                서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 <br />
+COPYRIGHT 2018 LOTTEWORLD. ALL RIGHT RESERVED.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

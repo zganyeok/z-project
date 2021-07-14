@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* #e60314 */
+/* reset */
+*{margin: 0;padding: 0;}
+body{background: #fff;}
+ul, li{margin: 0;padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+/* 모든 디바이스 공통 */
+#wrap header{height: 70px; border-bottom: 2px solid red;}
+#wrap header .logo{width: 30%; height: 70px; float: left;}
+#wrap header .logo img{width: 70px; margin-top: 10px; margin-left: 12px;}
+#wrap header .menu{width: 70%; height: 70px; float: left;}
+
+/* lnb */
+#wrap #contents .lnb{background: #fff; width: 100%; height: 500px;}
+#wrap #contents .lnb ul li{width: 100%; height: 70px; line-height: 70px; border-bottom: 1px solid #666; box-sizing: border-box; background: #fff; text-align: center;}
+#wrap #contents .lnb ul li a{display: block; color: #666; font-weight: bold;}
+#wrap #contents .lnb ul li a:hover,
+#wrap #contents .lnb ul li a:focus{background: #666; color: #fff;}
+
+/* center */
+#wrap #contents .center{background: #e60314;}
+
+
+/* banner */
+#wrap #contents .banner{background: #000;}
+.banner ul li{border-bottom: 1px solid #999; box-sizing: border-box;}
+.banner ul li a{display: block; background: #000; color: #666; text-align: center; font-weight: bold;}
+#wrap #contents .banner ul li a:hover,
+#wrap #contents .banner ul li a:focus{background: #666; color: #fff;}
+
+/* footer */
+#wrap footer{width: 100%; height: 70px; background: #fff; clear: both; border-top: 2px solid #e60314;}
+#wrap footer p{margin-top: 15px; color: #999; font-size: 14px; text-align: center; }
+
+
+
+/* mobile */
+@media (max-width:767px){
+    #wrap {width: 100%;}
+    /* 모바일에서 pc메뉴 가리기 */
+    #wrap header .menu{display: none;}
+    #wrap .lnb{display: none;}
+    #wrap header .tg{width: 70%; height: 70px; float: right; position: relative;}
+    #wrap header .tg span{position: absolute; right: 10px; top: 12px; cursor: pointer; font-size: 30px; color: #e60314;}
+    #wrap header .tg span:hover{color: #000;}
+    #wrap header .overlay{height: 100%; width: 0; position: fixed; top: 0; left: 0; z-index: 1; overflow: hidden; transition: 0.5s; background: rgba(0, 0, 0, 0.9); white-space: nowrap;}/*줄바꿈 안되게 하기*/
+    #wrap header .overlay ul li{border-bottom: 1px solid #666;}
+    #wrap header .overlay ul li a{padding: 20px; font-size: 20px; color: #818181; display: block; transition: 0.3s;} 
+    #wrap header .overlay a:hover,
+    #wrap header .overlay a:focus{background: #333; color: #f1f1f1; }
+    #wrap header .overlay .overlay-content{position: absolute; top: 10%; width: 100%; text-align: center; }
+    #wrap header .overlay .closebtn{position: absolute; top: 5px; right: 10px; color: #818181; font-size: 45px; height: 60px; line-height: 50px; text-align: center;}
+    #wrap #contents .center{width: 100%; height: 500px;}
+    #wrap #contents .banner{width: 100%; height: 450px;}
+    #wrap #contents .banner ul li{width: 100%; height: 150px; line-height: 150px;}
+
+}
+
+
+/* tablet */
+@media (min-width:768px){
+    #wrap{width: 100%; margin: 0 auto;}
+    #wrap header .tg{display: none;}
+    #wrap header .overlay{display: none;}
+    #wrap header .menu{display: block;}
+    #wrap header .menu ul li{width: 25%; height: 70px; line-height: 70px; float: left; }
+    #wrap header .menu ul li a{display: block; color: #e60314; text-align: center; font-weight: bold;}
+    #wrap header .menu ul li a:hover{background: #000; color: #fff;}
+    #wrap header .menu ul li a:focus{background: #000; color: #f1f1f1;}
+    #wrap #contents .lnb{width: 30%; height: 600px; float: left;}
+    #wrap #contents .center{width: 70%; height: 600px; float: left;}
+    #wrap #contents .banner{width: 100%; height: 150px; float: left;}
+    #wrap #contents .banner ul li{width: 33.3333%; height: 150px; line-height: 150px; float: left;}
+
+
+
+}
+
+
+
+
+
+/* pc */
+@media (min-width:1280px){
+   #wrap #contents .lnb{width: 20%; height: 900px; float: left;}
+   #wrap #contents .center{width: 60%; height: 900px; float: left;}
+   #wrap #contents .banner{width: 20%; height: 900px; float: left;}
+   #wrap #contents .banner ul li{width: 100%; height: 200px; line-height: 200px;}
+}
