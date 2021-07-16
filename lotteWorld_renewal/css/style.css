@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Noto Sans KR');
+@import("bower_components/noto-sans-korean-webfont/css/noto-sans-korean.css");
 
 /* reset */
 *{margin: 0;padding: 0;}
 ul, li,h1,h2,h3,h4{margin: 0;padding: 0; list-style: none;}
 a,img{display: block; text-decoration: none;}
-body{letter-spacing: -0.6px; font-family: 'Noto Sans KR', sans-serif; position: relative; }
+body{letter-spacing: -0.6px; font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial, sans-serif; position: relative; }
 
 /* QUICK MENU */
 
