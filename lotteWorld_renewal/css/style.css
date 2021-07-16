@@ -1,4 +1,4 @@
-@import("bower_components/noto-sans-korean-webfont/css/noto-sans-korean.css");
+@import url("path/noto-sans-korean-webfont/css/noto-sans-korean.css");
 
 /* reset */
 *{margin: 0;padding: 0;}
