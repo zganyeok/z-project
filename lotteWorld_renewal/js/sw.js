@@ -5,6 +5,7 @@
         var $indicator=$("#mySwipe~.mainbanr-pagination>li>a");
         var nowIdx=Math.floor(Math.random()*4); 
         // 현재 보이는 슬라이드의 index번호 
+        var oldIdx=nowIdx;
         var intervalID=null; // 현재의 값을 알 수 없다. 
         // null은, 변수에 지정된 데이터를 지우고자할때 사용 
         
