@@ -125,7 +125,7 @@ section.contents .center .search_box .notice_search img{width: 79px; height: 30p
 
 /* 하단메뉴 */
 section.bmenu{width: 100%; height: 291px;  background: #5d6a7b; padding: 34px 0 40px 0;}
-section.bmenu .inner{ background: url('../images/bg_footList.gif')repeat-y 0 0; }
+section.bmenu .inner{ background: url('../images/bg_footList.gif')repeat-y 0 0;position: relative; }
 section.bmenu ul{width: 100%; height: 100%; position: relative;}
 section.bmenu ul>li{position: absolute;}
 section.bmenu ul>li:nth-child(1){width: 140px;left: 0;}
