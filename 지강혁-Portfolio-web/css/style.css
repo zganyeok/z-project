@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0;padding: 0;}
+ul, li{margin: 0;padding: 0; list-style: none;}
+a{text-decoration: none;}
+.blind {position:absolute; top:0; left:0; overflow:hidden; text-indent:-9999999px; width: 0; height: 0; font-size:0;}
+
+/* 영문폰트연결 */
+body {font: normal 15px 'RalewayL'; color:#444;}
+@font-face {font-family: 'RalewayL';  src: url(../font/Raleway-Light.ttf);}
+@font-face {font-family: 'RalewayT';  src: url(../font/Raleway-Thin.ttf);}
+@font-face{font-family: 'SpoqaB'; src:url(../font/SpoqaHanSansBold.ttf);}
+@font-face{font-family: 'SpoqaL'; src:url(../font/SpoqaHanSansLight.ttf),url(../font/NanumSquare_acR.ttf), url(../font/SpoqaHanSansLight.woff);}
+@font-face{font-family: 'SpoqaR';  src:url(../font/SpoqaHanSansRegular.ttf), url(../font/SanumSquare_acR.ttf), url(../font/SpoqaHanSansRegular.woff);}
+
+/* 정렬 */
+.fl{float: left;}
+.fr{float: right;}
+
+#wrap{width: 100%; margin: 0 auto; position: relative;}
+
+/* header */
+#wrap header{width: 100%; position: fixed; border-bottom: 1px solid #e6e6e6; background: #fff; z-index: 999;}
+#wrap header .header_main{width: 1400px; height: 70px; margin: 0 auto; position: relative;}
+#wrap header .header_main .logo{margin-top: 23px;}
+#wrap header .header_main .logo h1{font-size: 23px; letter-spacing: 5px; padding-left: 50px;}
+#wrap header .header_main .logo h1 .logoImg{width: 35px; height: 35px; position: absolute; left: 0; top: 50%; transform: translate(0,-50%); border-radius: 50%;  background: url('../images/logo.png') no-repeat ; background-size: 35px;}
+#wrap header .header_main .logo h1 a{color: #444;}
+#wrap header .header_main .logo h1 a span{color: #f2b111;}
+#wrap header .header_main .logo h1 a span.pf{font-size: 12px; position: relative;}
+#wrap header .header_main .logo h1 a span.pf:before{content: ''; display: block; position: absolute; top: 2px; left: -8px; width: 2px; height: 9px; background: #f2b111;} 
+
+/* menu */
+#wrap header .header_main ul.nav li{padding: 26px; color: #444; font-size: 15px; font-weight: bold; cursor: pointer;}
+#wrap header .header_main ul.nav li.on{color: #f2b111;}
+#wrap header .header_main ul.nav li.on2{border-bottom:3px solid #f2b111;}
+
+#wrap section#profile{width: 100%; padding-top: 100px;}
+#wrap section#profile .profile_main{width: 1300px; margin: 0 auto; padding: 70px 0; overflow: hidden;}
+#wrap section#profile .profile_main .p_left{width: 500px; padding-left: 30px;}
+#wrap section#profile .profile_main .p_left .img{width: 400px; height: 400px; border-radius: 50%; background: #f2b111; position: relative; overflow: hidden; border: 0px;}
+#wrap section#profile .profile_main .p_left .img:after{content: ''; display: block; width: 400px; height: 400px; border-radius: 50%;  background: url('../images/me.png')no-repeat -20px 10px; background-size: 400px; position: absolute; bottom: -10px; left: 0px;  }
+
+#wrap section#profile .profile_main .p_right{width: 750px;}
+#wrap section#profile .profile_main .p_right dl{padding-top: 70px; padding-left: 50px;}
+#wrap section#profile .profile_main .p_right dl dt{font-size: 40px; margin-bottom: 30px;}
+#wrap section#profile .profile_main .p_right dl dt span{ background: linear-gradient(to left,#f2b111, #e76c06 ); -webkit-background-clip: text; -webkit-text-fill-color:transparent;}
+
+#wrap section#profile .profile_main .p_right dl dd{margin-top: 50px; font-size: 18px; line-height: 1.7;}
+#wrap section#profile .profile_main .p_right dl dd span{color: #f2b111;}
+#wrap section#profile .profile_main .p_right dl dd span.intro{color: #999;}
+
+/* section 전체 타이틀 */
+#wrap section h2{font-size: 17px; margin: 0 auto; border-bottom: 1px solid gray; width: 90px; padding-bottom: 20px; font-family: "SpoqaR"; text-align: center;}
+#wrap section h3{font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100;}
+
+/* skill */
+#wrap section#skill{width: 100%; padding: 0 0 60px 0;}
+#wrap section#skill .skill_main{width: 1400px; overflow: hidden; margin: auto; padding: 60px 0;}
+
+/* skill box */
+#wrap section#skill .skill_main .box{width: 220px; height: 280px; position: relative; margin-top: 100px; margin-left: 50px;}
+#wrap section#skill .skill_main .box>i{color: #fff; border-radius: 50%; width: 33px; height: 33px;  margin-bottom: 10px; margin-left: 82px; padding: 10px; text-align: center;  background: #f2b111;}
+#wrap section#skill .skill_main .box dl dt{font-size: 20px; margin-bottom: 30px; padding-top: 15px; text-align: center; width: 100%; font-weight: bold;}
+
+#wrap section#skill .skill_main .box dl dd{position: relative; font-size: 14px; line-height: 1.7; text-align: left; letter-spacing: -1px; padding-top: 0; padding-left: 0;}
+#wrap section#skill .skill_main .box.about dl dd{ text-align: center;}
+#wrap section#skill .skill_main .box.contacts dl dd{padding-left: 60px;}
+#wrap section#skill .skill_main .box.licenses dl dd{padding-left: 60px;}
+#wrap section#skill .skill_main .box.tools dl dd{padding-left: 65px;}
+#wrap section#skill .skill_main .box.skills dl dd{padding-left: 85px;}
+
+#wrap section#skill .skill_main .box dl dd i{position: absolute; left: 30px; color: #a7a7a7; font-size: 16px; padding-top: 4px;}
+
+/* portfolio */
+#wrap section#portfolio{min-width: 1400px; width: 100%; position: relative; background: url('../images/2323334.jpg') ; background-size: cover; padding-top: 70px;}
+#wrap section#portfolio .portfolio_main{ width: 1400px; margin: 0 auto; padding: 30px 0;}
+#wrap section#portfolio .portfolio_main dl dt{width: 700px; height: 620px;}
+
+/* pf-01 */
+#wrap section#portfolio .portfolio_main dl:nth-child(1){position: relative;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dt{background: url('../images/pf1.png') no-repeat 120px 120px; background-size: 85%;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dd{position: absolute; top: 100px; right: 100px;width: 450px; margin-top: 50px; margin-left: 50px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+#wrap section#portfolio .portfolio_main dl:nth-child(1) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+/* pf-02 */
+#wrap section#portfolio .portfolio_main dl:nth-child(2){position: relative;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dt{background: url('../images/pf2.png') no-repeat 0 120px; background-size: 85%; float: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dd{position: absolute; top: 100px; left: 100px;width: 450px; margin-top: 50px; margin-left: 50px; text-align: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;float: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(2) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+/* pf-03 */
+#wrap section#portfolio .portfolio_main dl:nth-child(3){position: relative;clear: both;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dt{background: url('../images/pf3.png') no-repeat 120px 160px; background-size: 80%;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dd{position: absolute; top: 100px; right: 100px;width: 450px; margin-top: 50px; margin-left: 50px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+#wrap section#portfolio .portfolio_main dl:nth-child(3) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+/* pf-04 */
+#wrap section#portfolio .portfolio_main dl:nth-child(4){position: relative;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dt{background: url('../images/pf4.png') no-repeat 0 120px; background-size: 75%; float: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dd{position: absolute; top: 100px; left: 100px;width: 450px; margin-top: 50px; margin-left: 50px; text-align: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;float: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(4) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+/* pf-05 */
+#wrap section#portfolio .portfolio_main dl:nth-child(5){position: relative;clear: both;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dt{background: url('../images/pf5.png') no-repeat center 100px; background-size: 95%;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dd{position: absolute; top: 100px; right: 100px;width: 450px; margin-top: 50px; margin-left: 50px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+#wrap section#portfolio .portfolio_main dl:nth-child(5) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+/* pf-06 */
+#wrap section#portfolio .portfolio_main dl:nth-child(6){position: relative;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dt{background: url('../images/pf6.png') no-repeat center 100px; background-size: 95%; float: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dd{position: absolute; top: 100px; left: 100px;width: 450px; margin-top: 50px; margin-left: 50px; text-align: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;float: right;}
+#wrap section#portfolio .portfolio_main dl:nth-child(6) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+/* pf-07 */
+#wrap section#portfolio .portfolio_main dl:nth-child(7){position: relative;clear: both;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dt{background: url('../images/pf7.png') no-repeat center 160px; background-size: 85%;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd{position: absolute; top: 100px; right: 100px;width: 450px; margin-top: 50px; margin-left: 50px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd h4{font-size: 15px; margin-bottom: 10px;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd h5{font-size: 50px; margin-bottom: 10px; font-weight: 100;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd p{font-size: 15px; line-height: 1.7;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd p.site_btn a{display: block; width: 100px; padding: 10px 70px; margin-top: 30px; text-align: center; color: #000; transition: .5s; letter-spacing: 5px; border: 1px solid #444;}
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
+
+/* section etc - 기타디자인 */
+section#etc{width: 100%; overflow: hidden; background: #f9f9f9; padding: 100px 0;}
+section#etc .etc_main{width: 1400px; height: 400px; margin: 0 auto; overflow: hidden; padding-top: 60px;}
+section#etc .etc_main dl{width: 19.2%; margin-right: 1%; position: relative; cursor: pointer;}
+section#etc .etc_main dl:last-child{margin-right: 0; }
+section#etc .etc_main dl dt{position: relative; width: 270px; height: 270px; overflow: hidden;}
+section#etc .etc_main dl dt p{width: 100%; height: 100%; transition: .5s;}
+section#etc .etc_main dl dt p:before{content: ''; position: absolute; top: 0;left: 0;width: 0; height: 100%;background: rgba(28, 28, 28, 0.9); opacity: 0.7; z-index: 999; transition: .6s;}
+section#etc .etc_main dl:hover dt p:before{width: 100%; }
+/* 자세히보기 */
+section#etc .etc_main dl dt p strong{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 5px 10px; color: #f2b111; border: 2px solid #f2b111; border-radius: 50px; transition: .6s; z-index: 9999; opacity: 0;}
+section#etc .etc_main dl:hover dt p strong{opacity: 1; }
+
+section#etc .etc_main dl.etc_1 dt i{position: absolute; top: 0;left: 0; width: 100%; height: 100%; background: url('../images/emo/thum.png') no-repeat center; background-size: cover; }
+section#etc .etc_main dl.etc_2 dt i{position: absolute; top: 0;left: 0; width: 100%; height: 100%; background: url('../images/app/thum.png') no-repeat -40px 35px; background-size: 120%; }
+section#etc .etc_main dl.etc_3 dt i{position: absolute; top: 0;left: 0; width: 100%; height: 100%; background: url('../images/ppt/ppt1.gif') no-repeat center; background-size: 100%; }
+section#etc .etc_main dl.etc_4 dt i{position: absolute; top: 0;left: 0; width: 100%; height: 100%; background: url('../images/drawing/d1.jpg') no-repeat center; background-size: cover; }
+section#etc .etc_main dl.etc_5 dt i{position: absolute; top: 0;left: 0; width: 100%; height: 100%; background: url('../images/brand/logo1.jpg') no-repeat -200px 0; background-size: 200%; }
+section#etc .etc_main dl.etc_3 dt{background: rgb(39, 39, 39);}
+section#etc .etc_main dl dd{padding: 20px 0; font-size: 14px; line-height: 1.7; text-align: right;}
+section#etc .etc_main dl dd span{font-weight: normal;}
+
+/* 하단화살표 */
+.btn_top{position: fixed; right: 2%; bottom: 7%; width: 50px; height: 50px;cursor: pointer; display: none; z-index: 99;}
+
+#wrap footer{width: 100%;}
+#wrap footer .footer_main{width: 1400px; margin: 0 auto;}
+#wrap footer .footer_main ul.sns{width: 1400px; margin: 0 auto; overflow: hidden; margin-top: 20px;}
+#wrap footer .footer_main ul.sns li{margin-right: 20px;}
+#wrap footer .footer_main ul.sns li:last-child{margin-right: 0;}
+#wrap footer .footer_main ul.sns li a{color: #444;}
+#wrap footer .footer_main ul.sns li a i{font-size: 25px;}
+#wrap footer .footer_main .copy{width: 100%; padding: 30px 0 41px 0;}
+#wrap footer .footer_main .copy p{font-size: 14px;}
+
+/* popup all */
+#wrap #popup{width: 100%; margin: 0 auto; }
+#wrap #popup .popup_main{width: 100%; margin: 0 auto; }
+#wrap #popup .popup_main .bg{ position: fixed; top: 0;right: 0; left: 0;bottom: 0; background: rgba(0, 0, 0, 0.7); z-index: 99999; display: none;}
+
+#wrap #popup .popup_main .bg p.close{position: fixed; bottom: 5%; left: 50%; transform: translate(-50%,0); color: #ebe9e9; font-size: 13px; font-weight: 100; z-index: 999999;}
+
+/* popup1 */
+#popup1{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 538px; overflow: hidden; z-index: 999999; display: none;}
+#popup1 button{width: 100px; height: 100px; font-size: 70px; font-weight: 100; padding-bottom: 10px; outline: 0; border: 0;   background: #333; color: #fff; opacity: 0.3; cursor: pointer; font-family: 'RalewayT'; z-index: 999999;}
+#popup1 button.prev{position: absolute; top: 40%; left: 0;}
+#popup1 button.next{position: absolute; top: 40%; right: 0;}
+#popup1 ul.popList{width: 2400px; height: 738px;}
+#popup1 ul.popList li.popImg{width: 800px; height: 638px;}
+/* popup2 */
+#popup2{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 538px; overflow: hidden; z-index: 999999; display: none;}
+#popup2 button{width: 100px; height: 100px; font-size: 70px; font-weight: 100; padding-bottom: 10px; outline: 0; border: 0;   background: #333; color: #fff; opacity: 0.3; cursor: pointer; font-family: 'RalewayT'; z-index: 999999;}
+#popup2 button.prev{position: absolute; top: 40%; left: 0;}
+#popup2 button.next{position: absolute; top: 40%; right: 0;}
+#popup2 ul.popList{width: 2400px; height: 738px;}
+#popup2 ul.popList li.popImg{width: 800px; height: 638px;}
+#popup2 ul.popList li.popImg img{width: 1000px; margin-left: -100px; margin-top: -50px;}
+/* popup3 */
+#popup3{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 538px; overflow: hidden; z-index: 999999; display: none;}
+#popup3 button{width: 100px; height: 100px; font-size: 70px; font-weight: 100; padding-bottom: 10px; outline: 0; border: 0;   background: #333; color: #fff; opacity: 0.3; cursor: pointer; font-family: 'RalewayT'; z-index: 999999;}
+#popup3 button.prev{position: absolute; top: 40%; left: 0;}
+#popup3 button.next{position: absolute; top: 40%; right: 0;}
+#popup3 ul.popList{width: 2400px; height: 738px;}
+#popup3 ul.popList li.popImg{width: 800px; height: 638px;}
+#popup3 ul.popList li.popImg video{width: 800px; margin-top: 45px;}
+/* popup4 */
+#popup4{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 538px; overflow: hidden; z-index: 999999; display: none;}
+#popup4 button{width: 100px; height: 100px; font-size: 70px; font-weight: 100; padding-bottom: 10px; outline: 0; border: 0;   background: #333; color: #fff; opacity: 0.3; cursor: pointer; font-family: 'RalewayT'; z-index: 999999;}
+#popup4 button.prev{position: absolute; top: 40%; left: 0;}
+#popup4 button.next{position: absolute; top: 40%; right: 0;}
+#popup4 ul.popList{width: 2400px; height: 738px;}
+#popup4 ul.popList li.popImg{width: 800px; height: 638px;}
+#popup4 ul.popList li.d5 img{ margin-top: -60px;}
+/* popup5 */
+#popup5{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 538px; overflow: hidden; z-index: 999999; display: none;}
+#popup5 button{width: 100px; height: 100px; font-size: 70px; font-weight: 100; padding-bottom: 10px; outline: 0; border: 0;   background: #333; color: #fff; opacity: 0.3; cursor: pointer; font-family: 'RalewayT'; z-index: 999999;}
+#popup5 button.prev{position: absolute; top: 40%; left: 0;}
+#popup5 button.next{position: absolute; top: 40%; right: 0;}
+#popup5 ul.popList{width: 2400px; height: 738px;}
+#popup5 ul.popList li.popImg{width: 800px; height: 638px;}
+#popup5 ul.popList li.popImg img{width: 800px; margin-top: 15px;}
