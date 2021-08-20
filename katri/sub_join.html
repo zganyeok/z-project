@@ -14,6 +14,7 @@
     <script src="js/plus.minus.js"></script>
 
     <script src="js/katriMenu.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     <script>
  
  $(function(){
@@ -52,8 +53,8 @@
             <!-- serach-->
             <dl class="search">
                 <dt class="blind">검색</dt>
-                <dd class="news"><a href="">알림정보</a></dd>
-                <dd class="people"><a href="">연구원 소개</a></dd>
+                <dd class="news"><a href="#">알림정보</a></dd>
+                <dd class="people"><a href="#">연구원 소개</a></dd>
             </dl>
             <form action="#" method='post'>
                 <fieldset>
@@ -66,7 +67,7 @@
             <!-- menu 5ea-->
             <h2 class="blind">주메뉴</h2>
             <ul id="gnb" class="gnb">
-                <li class="nav"><a href="#"><img src="images/gnb1.gif" alt="시험,검사"></a>
+                <li class="nav"><a href="sub_join.html"><img src="images/gnb1.gif" alt="시험,검사"></a>
                 <ul class="menu1">
                     <li><dl>
                         <dt>섬유 &middot; 패션시험</dt>
@@ -130,7 +131,7 @@
                 </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb2.gif" alt="제품인증"></a>
+                <a href="sub_notice.html"><img src="images/gnb2.gif" alt="제품인증"></a>
             <ul class="menu2">
                 <li>
                     <h3>어린이제품 안전 특별법 대상</h3>
@@ -228,7 +229,7 @@
             </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb3.gif" alt="연구개발"></a>
+                <a href="sub_join.html"><img src="images/gnb3.gif" alt="연구개발"></a>
                 <ul class="menu3">
                     <li><a href="#">업무안내</a></li>
                     <li><a href="#">과제 수행실적</a></li>
@@ -236,7 +237,7 @@
                 </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb4.gif" alt="신청,결과"></a>
+                <a href="sub_notice.html"><img src="images/gnb4.gif" alt="신청,결과"></a>
                 <ul class="menu4">
                     <li><a href="#">시험신청안내</a></li>
                     <li><a href="#">신청서양식 다운로드</a></li>
@@ -248,7 +249,7 @@
                 </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb5.gif" alt="고객서비스"></a>
+                <a href="sub_join.html"><img src="images/gnb5.gif" alt="고객서비스"></a>
                 <ul class="menu5">
                     <li><a href="#">고객서비스 전용시스템</a></li>
                     <li><a href="#">성적서 위&middot;변조확인</a></li>
@@ -290,6 +291,7 @@
 
         <!-- 회원가입 콘텐츠 -->
         <section class="contents">
+            <h4 class="blind">회원가입</h4>
         <div class="inner">
             <!-- lnb -->
             <aside>
@@ -309,7 +311,7 @@
             
             <!-- 정보입력 -->
             <form action="#" method="post">
-                <legend class="blind">02.정보입력</legend>
+
 
                 <table>
                     <caption class="blind">정보입력화면</caption>
@@ -376,9 +378,9 @@
                         <td class="ph">
                             <input type="text" id="userHpn" maxlength="4">
                             -
-                            <input type="text" id="userHpn" maxlength="4">
+                            <input type="text" maxlength="4">
                             -
-                            <input type="text" id="userHpn" maxlength="4">
+                            <input type="text" maxlength="4">
                         </td>
                     </tr>
                         <!-- 8.전화번호 -->
@@ -389,9 +391,9 @@
                         <td class="ph">
                             <input type="text" id="userPn" maxlength="4">
                             -
-                            <input type="text" id="userPn" maxlength="4">
+                            <input type="text" maxlength="4">
                             -
-                            <input type="text" id="userPn" maxlength="4">
+                            <input type="text" maxlength="4">
                         </td>
                     </tr>
                     <!-- 9.직업 -->
@@ -427,13 +429,13 @@
                     <!-- 10.주소 -->
                     <tr>
                         <th>
-                            <label for="userAdd"><img src="./images/icon_check.gif" alt="필수항목"> 주소</label>
+                            <label for="userAdd"><img src="./images/icon_check.gif" alt="필수항목" class="userAdd"> 주소</label>
                         </th>
                         <td class="address">
                             <input type="text" id="userAdd" maxlength="6"><span class="addSearch"><img src="./images/btn_join_post.gif" alt="우편번호 검색"></span>
-                            <input type="text" id="userAdd" maxlength="25" class="gray">
+                            <input type="text" maxlength="25" class="gray">
                             <br/>
-                            <input type="text" id="userAdd" class="last_input" maxlength="25">
+                            <input type="text" class="last_input" maxlength="25">
                         </td>
                     </tr>
 
@@ -453,6 +455,7 @@
         
   <!--  하단메뉴 -->
         <section class="bmenu">
+            <h4 class="blind">하단메뉴</h4>
             <ul class="inner">
                 <li>
                     <dl>
@@ -564,7 +567,7 @@
                     </ul>
                 </div>
                 <div class="copyright">
-                    <p>서울특별시 동대문구 왕산로 51(용두동) / 사업자등록번호 : 204-82-01330 / TEL : 02-3668-3000 / FAX : 02-3668-2900~1</br>
+                    <p>서울특별시 동대문구 왕산로 51(용두동) / 사업자등록번호 : 204-82-01330 / TEL : 02-3668-3000 / FAX : 02-3668-2900~1<br/>
                         COPYRIGHT 2014 KATRI. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
@@ -577,7 +580,7 @@
                     <option value="#">한국섬유산업연합회</option>
                     <option value="#">국가기술표준원</option>
                 </select>
-                <a href="#" class="move"></a>
+                <a href="#" class="move">이동</a>
             </div>
         </div>
         </footer>

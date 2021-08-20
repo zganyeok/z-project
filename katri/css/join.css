@@ -99,6 +99,7 @@ section.contents .center table{width:740px;border-top:2px solid #3a7ab8;}
 section.contents .center tr{height:50px; border-bottom:1px solid #dedede; box-sizing: border-box;}
 section.contents .center th{width:170px; height: 100%;  padding-left:40px; border-right:1px solid #dedede;box-sizing: border-box; background:#f8f9fb;font-weight:bold; position: relative;}
 section.contents .center th img{position: absolute; left: 20px; top: 21.5px;}
+section.contents .center th img.userAdd{position: absolute; left: 20px; top: 40px;}
 section.contents .center td{padding-left: 10px;}
 section.contents .center td input{width: 200px; height: 28px; border:1px solid #ccc; }
 section.contents .center td .checkBtn{width: 66px; height: 28px; margin-left: 5px; cursor: pointer;}
@@ -129,7 +130,7 @@ section.bmenu ul.inner{ height: 100%; background: url('../images/bg_footList.gif
 section.bmenu>ul>li{float: left;}
 section.bmenu>ul>li:nth-child(1){width: 140px;}
 section.bmenu>ul>li:nth-child(2){width: 112px; padding-left: 20px;}
-section.bmenu>ul>li:nth-child(3){width: 138px;padding-left: 20px;}e
+section.bmenu>ul>li:nth-child(3){width: 138px;padding-left: 20px;}
 section.bmenu>ul>li:nth-child(4){width: 130px;padding-left: 20px;}
 section.bmenu>ul>li:nth-child(5){width: 130px;padding-left: 20px;}
 section.bmenu>ul>li:nth-child(6){width: 84px;padding-left: 20px;}
@@ -153,5 +154,5 @@ footer .b_left .copyright p{font-size: 12px; line-height: 17px;}
 
 footer .familySite{float: right;} 
 footer .familySite select{float: left; width: 135px; height: 28px; line-height: 28px; font-size: 12px; color:#767676; border: 1px solid #ccc; outline: none;}
-footer .familySite a{display: block; float: left; width: 51px; height: 28px;  background: url('../images/next.jpg') no-repeat; margin-left: 2px;} 
+footer .familySite a{display: block; float: left; width: 51px; height: 28px;  background: url('../images/next.jpg') no-repeat; margin-left: 2px;  text-indent: -99999px;} 
 

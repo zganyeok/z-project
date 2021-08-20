@@ -11,6 +11,7 @@
     <script src="js/swiper.js"></script>
     <script src="js/sw.js"></script>
     <script src="js/katriMenu.js"></script>
+    <script src="js/prefixfree.min.js"></script>
 </head>
 <body>
     <div id="skipNavi"><a href="#">본문바로가기</a></div>
@@ -29,8 +30,8 @@
             <!-- serach-->
             <dl class="search">
                 <dt class="blind">검색</dt>
-                <dd class="news"><a href="">알림정보</a></dd>
-                <dd class="people"><a href="">연구원 소개</a></dd>
+                <dd class="news"><a href="#">알림정보</a></dd>
+                <dd class="people"><a href="#">연구원 소개</a></dd>
             </dl>
             <form action="#" method='post'>
                 <fieldset>
@@ -43,7 +44,7 @@
             <!-- menu 5ea-->
             <h2 class="blind">주메뉴</h2>
             <ul id="gnb" class="gnb">
-                <li class="nav"><a href="#"><img src="images/gnb1.gif" alt="시험,검사"></a>
+                <li class="nav"><a href="sub_join.html"><img src="images/gnb1.gif" alt="시험,검사"></a>
                 <ul class="menu1">
                     <li><dl>
                         <dt>섬유 &middot; 패션시험</dt>
@@ -107,7 +108,7 @@
                 </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb2.gif" alt="제품인증"></a>
+                <a href="sub_notice.html"><img src="images/gnb2.gif" alt="제품인증"></a>
             <ul class="menu2">
                 <li>
                     <h3>어린이제품 안전 특별법 대상</h3>
@@ -205,7 +206,7 @@
             </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb3.gif" alt="연구개발"></a>
+                <a href="sub_join.html"><img src="images/gnb3.gif" alt="연구개발"></a>
                 <ul class="menu3">
                     <li><a href="#">업무안내</a></li>
                     <li><a href="#">과제 수행실적</a></li>
@@ -213,7 +214,7 @@
                 </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb4.gif" alt="신청,결과"></a>
+                <a href="sub_notice.html"><img src="images/gnb4.gif" alt="신청,결과"></a>
                 <ul class="menu4">
                     <li><a href="#">시험신청안내</a></li>
                     <li><a href="#">신청서양식 다운로드</a></li>
@@ -225,7 +226,7 @@
                 </ul>
             </li>
             <li class="nav">
-                <a href="#"><img src="images/gnb5.gif" alt="고객서비스"></a>
+                <a href="sub_join.html"><img src="images/gnb5.gif" alt="고객서비스"></a>
                 <ul class="menu5">
                     <li><a href="#">고객서비스 전용시스템</a></li>
                     <li><a href="#">성적서 위&middot;변조확인</a></li>
@@ -266,7 +267,7 @@
                     분야의 품질향상을 위해 시험, 검사, 인증, 컨설팅, 기술 지원 업무 등을 수행합니다.
                     </p>
                     <ul>
-                        <li><a href="#"><img src="images/visual2_bt1.png" alt="자동차 내&middot;외장재"></a></li>
+                        <li><a href="#"><img src="images/visual2_bt1.png" alt="자동차 내,외장재"></a></li>
                         <li><a href="#"><img src="images/visual2_bt2.png" alt="가구"></a></li>
                         <li><a href="#"><img src="images/visual2_bt3.png" alt="전기전자제품"></a></li>
                     </ul>
@@ -315,13 +316,14 @@
             </ul>
         </div>
         <ul class="ban_pagination">
-            <a href="#" class="btn_auto pause"></a>
+            <li class="btn_auto pause">일시정지</li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
+
         </ul>
     </section>
         <!--  슬라이드메뉴 -->
@@ -405,14 +407,15 @@
                 </ul>
             </div>
             <div class="promotion">
-             <p><a href="#"></a></p>
-             <p><a href="#"></a></p>
+             <p><a href="#" class="blind">시험의뢰절차영상</a></p>
+             <p><a href="#" class="blind">브로슈어</a></p>
             </div>
         </div>
         </section>
 
   <!--  하단메뉴 -->
         <section class="bmenu">
+            <h4 class="blind">하단메뉴</h4>
             <ul class="inner">
                 <li>
                     <dl>
@@ -524,7 +527,7 @@
                     </ul>
                 </div>
                 <div class="copyright">
-                    <p>서울특별시 동대문구 왕산로 51(용두동) / 사업자등록번호 : 204-82-01330 / TEL : 02-3668-3000 / FAX : 02-3668-2900~1</br>
+                    <p>서울특별시 동대문구 왕산로 51(용두동) / 사업자등록번호 : 204-82-01330 / TEL : 02-3668-3000 / FAX : 02-3668-2900~1<br/>
                         COPYRIGHT 2014 KATRI. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
@@ -537,7 +540,7 @@
                     <option value="#">한국섬유산업연합회</option>
                     <option value="#">국가기술표준원</option>
                 </select>
-                <a href="#" class="move"></a>
+                <a href="#" class="move">이동</a>
             </div>
         </div>
         </footer>

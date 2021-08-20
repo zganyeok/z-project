@@ -81,7 +81,7 @@ ul.gnb .menu5 {left: 515px; width: 140px;}
 .middle .right_icon span.print{width: 46px; height: 40px; background: url('../images/btn_path_print.gif') no-repeat; cursor: pointer;}
 
 
-/* 회원가입 콘텐츠 */
+/* 공지사항 콘텐츠 */
 section.contents{width: 100%; height: 789px;}
 section.contents aside{width: 200px; height: 847px; float: left; padding-top: 40px;}
 section.contents aside h4.login{font-size: 20px; padding-left: 20px; width: 180px; font-weight: bold; color: #fff; height: 60px; line-height: 60px; background: #4563a1;}
@@ -125,7 +125,7 @@ section.contents .center .search_box .notice_search img{width: 79px; height: 30p
 
 /* 하단메뉴 */
 section.bmenu{width: 100%; height: 291px;  background: #5d6a7b; padding: 34px 0 40px 0;}
-section.bmenu .inner{ background: url('../images/bg_footList.gif')repeat-y 0 0;}
+section.bmenu .inner{ background: url('../images/bg_footList.gif')repeat-y 0 0; }
 section.bmenu ul{width: 100%; height: 100%; position: relative;}
 section.bmenu ul>li{position: absolute;}
 section.bmenu ul>li:nth-child(1){width: 140px;left: 0;}
@@ -154,5 +154,5 @@ footer .b_left .copyright p{font-size: 12px; line-height: 17px;}
 
 footer .familySite{float: right;} 
 footer .familySite select{float: left; width: 135px; height: 28px; line-height: 28px; font-size: 12px; color:#767676; border: 1px solid #ccc; outline: none;}
-footer .familySite a{display: block; float: left; width: 51px; height: 28px;  background: url('../images/next.jpg') no-repeat; margin-left: 2px;} 
+footer .familySite a{display: block; float: left; width: 51px; height: 28px;  background: url('../images/next.jpg') no-repeat; margin-left: 2px;  text-indent: -99999px;} 
 
