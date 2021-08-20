@@ -21,7 +21,7 @@ body {font: normal 15px 'RalewayL'; color:#444;}
 #wrap{width: 100%; margin: 0 auto; position: relative;}
 
 /* header */
-#wrap header{width: 100%; position: fixed; border-bottom: 1px solid #e6e6e6; background: #fff; z-index: 999;}
+#wrap header{width: 100%; position: fixed; border-bottom: 1px solid #e6e6e6; background: #fff; z-index: 999; min-width: 1400px;}
 #wrap header .header_main{width: 1400px; height: 70px; margin: 0 auto; position: relative;}
 #wrap header .header_main .logo{margin-top: 23px;}
 #wrap header .header_main .logo h1{font-size: 23px; letter-spacing: 5px; padding-left: 50px;}
@@ -36,7 +36,7 @@ body {font: normal 15px 'RalewayL'; color:#444;}
 #wrap header .header_main ul.nav li.on{color: #f2b111;}
 #wrap header .header_main ul.nav li.on2{border-bottom:3px solid #f2b111;}
 
-#wrap section#profile{width: 100%; padding-top: 100px;}
+#wrap section#profile{width: 100%; padding-top: 100px; min-width: 1400px;}
 #wrap section#profile .profile_main{width: 1300px; margin: 0 auto; padding: 70px 0; overflow: hidden;}
 #wrap section#profile .profile_main .p_left{width: 500px; padding-left: 30px;}
 #wrap section#profile .profile_main .p_left .img{width: 400px; height: 400px; border-radius: 50%; background: #f2b111; position: relative; overflow: hidden; border: 0px;}
@@ -56,7 +56,7 @@ body {font: normal 15px 'RalewayL'; color:#444;}
 #wrap section h3{font-size: 35px; text-align: center; margin-top: 30px; margin-bottom: 30px; letter-spacing: 2px; font-weight: 100;}
 
 /* skill */
-#wrap section#skill{width: 100%; padding: 0 0 60px 0;}
+#wrap section#skill{width: 100%; padding: 0 0 60px 0; min-width: 1400px;}
 #wrap section#skill .skill_main{width: 1400px; overflow: hidden; margin: auto; padding: 60px 0;}
 
 /* skill box */
@@ -143,7 +143,7 @@ body {font: normal 15px 'RalewayL'; color:#444;}
 #wrap section#portfolio .portfolio_main dl:nth-child(7) dd p.site_btn a:hover{border: 1px solid #f2b111; color: #f2b111;}
 
 /* section etc - 기타디자인 */
-section#etc{width: 100%; overflow: hidden; background: #f9f9f9; padding: 100px 0;}
+section#etc{width: 100%; overflow: hidden; background: #f9f9f9; padding: 100px 0; min-width: 1400px;}
 section#etc .etc_main{width: 1400px; height: 400px; margin: 0 auto; overflow: hidden; padding-top: 60px;}
 section#etc .etc_main dl{width: 19.2%; margin-right: 1%; position: relative; cursor: pointer;}
 section#etc .etc_main dl:last-child{margin-right: 0; }
@@ -167,7 +167,7 @@ section#etc .etc_main dl dd span{font-weight: normal;}
 /* 하단화살표 */
 .btn_top{position: fixed; right: 2%; bottom: 7%; width: 50px; height: 50px;cursor: pointer; display: none; z-index: 99;}
 
-#wrap footer{width: 100%;}
+#wrap footer{width: 100%; min-width: 1400px;}
 #wrap footer .footer_main{width: 1400px; margin: 0 auto;}
 #wrap footer .footer_main ul.sns{width: 1400px; margin: 0 auto; overflow: hidden; margin-top: 20px;}
 #wrap footer .footer_main ul.sns li{margin-right: 20px;}
