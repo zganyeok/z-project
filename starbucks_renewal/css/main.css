@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* reset */
@@ -10,12 +10,12 @@ body{background: #252424; font-family: 'Noto Sans KR', sans-serif; }
 
 
 /* wrap */
-#wrap{width: 100%; height: 100%; position: relative;}
+#wrap{width: 1366px; position: relative;}
 
-.inner{width: 1100px; height: 100%; margin: 0 auto; position: relative;}
+.inner{width: 1100px; height: 100%; margin: 0 auto; position: relative; min-width: 1100px;}
 
 header{width: 100%; height: 110px; z-index: 99; position: fixed; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px); border-bottom: 1.5px solid rgba(160, 160, 160, 0.4); box-sizing: border-box;} 
-header .headerInner{width: 1100px; height: 100%; margin: 0 auto;}
+header .headerInner{width: 1100px; height: 100%; margin: 0 auto; min-width: 1100px;}
 
 header .logo{ opacity: 1; width: 100px; height: 100%; float: left;}
 header .logo img{ padding-top: 17.5px;}
@@ -52,7 +52,7 @@ header .bottomMenu ul.fullMenu{position: absolute; left: 0;top: 110px;height: au
   radial-gradient(circle at 97.3% 80%,
     rgba(223, 213, 199, 0.5),
     rgba(152, 154, 182,0) 20.71%) rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 10px 10px 0px #1a1a1a29; border-bottom: 1px solid rgba(69, 69, 69, 0.5); z-index: 99; display: none;}
-header .bottomMenu ul.fullMenu .menuInner{width: 1100px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; }
+header .bottomMenu ul.fullMenu .menuInner{width: 1100px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; min-width: 1100px;}
 header .bottomMenu ul.fullMenu .menuInner>li{float: left; }
 
 /* sub menu */
@@ -69,7 +69,7 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 
 /* section1 - 비디오 */
 #section1{width: 100%; height: auto;  position: relative; }
-#section1 video{width: 100%; opacity: 0.4;}
+#section1 video{width: 100%; height: 100%; opacity: 0.4;}
 #section1:after{content: ''; display: block; width: 100%; height: 140px; background:url('../images/gradient.png') repeat-x; position: absolute; bottom:0; left: 0;}
 #section1 span.comment{ background: url('../images/STARBUCKS\ KOREA.png') no-repeat center; width: 504px; height: 141px; display: block; position: absolute; top: 40%; left: 50%; transform: translate(-50%,-40%);}
 #section1 p{position: absolute; left: 50%; top:60%; transform: translate(-50%,-50%); color: rgba(255, 255, 255, 0.75); font-size: 16px;  line-height: -10px; text-align: center; font-weight: 300; line-height: 1.7; }
@@ -125,8 +125,8 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 #section2 .frame .rewards .rightTxt .giftBtn{width: 172px; height: 28px; border: 1px solid #fff; box-sizing: border-box; border-radius: 50px; margin-top: 25px;}
 #section2 .frame .rewards .rightTxt .giftBtn a{font-size: 12px; color: #fff; display: block; text-align: center; line-height: 26px;}
 
-#section2 .banner{width: 1100px; height: 250px; margin: 16px auto; border-top-left-radius: 125px; border-bottom-left-radius: 125px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden;}
-#section2 .banner #sliderList{width: 100%; min-width: 1100px;}
+#section2 .banner{width: 1100px; height: 250px; margin: 16px auto; border-top-left-radius: 125px; border-bottom-left-radius: 125px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; }
+#section2 .banner #sliderList{width: 100%; min-width: 1100px; min-width: 1100px; }
 #section2 .banner .slider{width: 100%; height: 100%;}
 #section2 .banner ul.slideImg{width: 300%; height: 100%;}
 #section2 .banner ul.slideImg li{float: left; width: 33.3333%;position: relative;}/*position : relative 해야 옆으로 공백없음*/
@@ -217,7 +217,7 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 
 /* footer */
 footer{width: 100%; height: 558px; color: #fff; background: #1b1a1a;}
-footer .inner{width: 1100px; height: 428px;}
+footer .inner{width: 1100px; height: 428px;min-width: 1100px;}
 footer ul.awards{width: 100%; background: #272727; display: flex; justify-content: space-evenly; padding: 45px 0;}
 
 footer .bMenu{width: 100%; height:257px;}
