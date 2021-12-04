@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* reset */
+*{margin: 0;padding: 0;}
+ul, li,h1,h2,h3,h4{margin: 0;padding: 0; list-style: none;}
+a,img{display: block; text-decoration: none; color: #333;}
+body{background: #252424; font-family: 'Noto Sans KR', sans-serif; }
+/* letter-spacing: -0.6px; */
+
+
+/* wrap */
+#wrap{width: 100%; height: 100%; position: relative;}
+
+.inner{width: 1100px; height: 100%; margin: 0 auto; position: relative;}
+
+header{width: 100%; height: 110px; z-index: 99; position: fixed; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px); border-bottom: 1.5px solid rgba(160, 160, 160, 0.4); box-sizing: border-box;} 
+header .headerInner{width: 1100px; height: 100%; margin: 0 auto;}
+
+header .logo{ opacity: 1; width: 100px; height: 100%; float: left;}
+header .logo img{ padding-top: 17.5px;}
+header .menu{ width: 1000px; height: 100%; float: right;}
+header .menu .topMenu{width: 1000px; height: 40px; }
+header .menu .topMenu ul{float: right; }
+header .menu .topMenu ul li{float: left;margin-left: 36px;  line-height: 40px;}
+header .menu .topMenu ul li a{display: block;  font-size: 11px;}
+header .menu .topMenu ul li.gnbSearch{ height: 40px; line-height: 40px;}
+header .menu .topMenu ul li.gnbSearch .inputTxt{width: 0px; padding: 0 15px; border-radius: 50px; border: none; height: 22px;margin-right: 14px;margin-top: 9px; color: #333; background: #fff; display: none; float: left; }
+header .menu .topMenu ul li.gnbSearch .inputTxt::placeholder{font-size: 12px;}
+header .menu .topMenu ul li.gnbSearch .inputTxt:focus{outline: none;}
+header .menu .topMenu ul li.gnbSearch .inputImg{width: 14px; height: 14px;float: right; margin-top: 13px; }
+
+/* bottom menu */
+header .menu .bottomMenu{ clear: both;}
+header .menu .bottomMenu>ul{float: right; margin-right: -20px; margin-top:10px;}
+header .menu .bottomMenu>ul>li{float: left; }
+
+header .menu .bottomMenu>ul>li>a{font-size: 14px; font-weight: 500;  padding: 0 20px;height: 60px; line-height: 60px; }
+header .menu .bottomMenu>ul>li:hover>a{background:  rgba(255, 255, 255, 0.5); border-top-left-radius: 20px; border-top-right-radius: 20px; backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
+header .menu .bottomMenu>ul>li>a::after{content: '';display: block; width: 1%; height: 1px; background:#007042; transform: translate(50%,-1px);opacity: 0; transition: 0.2s; }
+header .menu .bottomMenu>ul>li:hover>a::after{opacity: 1; width: 100%; transform: translate(0,-1px);}
+
+/* full menu */
+header .bottomMenu ul.fullMenu{position: absolute; left: 0;top: 110px;height: auto; width: 100%;padding-bottom: 30px;
+  background:
+  radial-gradient(circle at 50% 0,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 70.71%),
+  radial-gradient(circle at 6.7% 75%,
+    rgba(191, 177, 158, 0.5),
+    rgba(179, 151, 159,0) 70.71%),
+  radial-gradient(circle at 97.3% 80%,
+    rgba(223, 213, 199, 0.5),
+    rgba(152, 154, 182,0) 20.71%) rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 10px 10px 0px #1a1a1a29; border-bottom: 1px solid rgba(69, 69, 69, 0.5); z-index: 99; display: none;}
+header .bottomMenu ul.fullMenu .menuInner{width: 1100px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; }
+header .bottomMenu ul.fullMenu .menuInner>li{float: left; }
+
+/* sub menu */
+ul.subMenu{margin-top: 20px;}
+ul.subMenu li:first-child{font-weight: 500; font-size: 16px; height: 50px;line-height: 50px; border-bottom: 1px solid rgba(0, 0, 0, 0.25); } 
+ul.subMenu li{font-size: 16px; text-align: center; height: 36px; line-height: 36px;}
+ul.subMenu li a{color: #444;}
+ul.subMenu li:first-child:hover a{color: #333; text-decoration: none;}
+ul.subMenu li:hover a{color: #007042; text-decoration:underline;}
+ul.giftCard{width: 250px; height: auto; position: relative;}
+ul.giftCard li:nth-child(2) img{ width: 100%;  position: absolute; top: 20px;}
+ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left: 50%; transform: translate(-50%,0);}
+
+
+/* section1 - 비디오 */
+#section1{width: 100%; height: auto;  position: relative; }
+#section1 video{width: 100%; opacity: 0.4;}
+#section1:after{content: ''; display: block; width: 100%; height: 140px; background:url('../images/gradient.png') repeat-x; position: absolute; bottom:0; left: 0;}
+#section1 span.comment{ background: url('../images/STARBUCKS\ KOREA.png') no-repeat center; width: 504px; height: 141px; display: block; position: absolute; top: 40%; left: 50%; transform: translate(-50%,-40%);}
+#section1 p{position: absolute; left: 50%; top:60%; transform: translate(-50%,-50%); color: rgba(255, 255, 255, 0.75); font-size: 16px;  line-height: -10px; text-align: center; font-weight: 300; line-height: 1.7; }
+#section1 p strong{font-size: 23px; font-weight: 400;}
+
+
+/* scroll - 애니메이션 */
+#section1 .scroll,.scroll::before{position: absolute; left: 50%; z-index:1;}
+.scroll{width: 20px; height: 20px; bottom: 10%; margin: -10px 0 0 -10px; transform: rotate(45deg); -webkit-transform: rotate(45deg); border-left: none; border-top: none; border-right: 2px solid rgba(255, 255, 255, 0.75); border-bottom: 2px solid rgba(255, 255, 255, 0.75); animation-duration: 2s; animation-iteration-count: infinite; animation-name: scroll1;}
+.scroll::before{content: ''; width: 10px; height: 10px; bottom: 10%; margin: -10px 0 0 -3px; border-left: none; border-top: none; border-right: 1px solid rgba(255, 255, 255, 0.75); border-bottom: 1px solid rgba(255, 255, 255, 0.75); animation-duration: 2s; animation-iteration-count: infinite; animation-name: scroll2;}
+@keyframes scroll1{
+  0%{transform: scale(100%) rotate(45deg);}
+  50%{transform: scale(80%) rotate(45deg);}
+  100%{transform: scale(100%) rotate(45deg);}
+}
+@keyframes scroll2{
+  0%{opacity: 1;}
+100%{opacity: 0; transform: translate(-10px,-10px);}
+}
+
+
+           
+
+/* section2 - 게시판 */
+#section2{width: 100%; height: 600px;}
+#section2 .frame{width: 100%; height: 250px; border-top-right-radius: 125px; border-bottom-right-radius: 125px; margin-top: 200px; background: url('../images/frame.png') no-repeat center ; }
+#section2 .frame .notice{width: 449px; height: 250px; position: relative; float: left; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);}
+#section2 .frame .notice .tit{ background: url('../images/NOTICE.png') no-repeat left; width: 150px; height: 15px;  position: absolute; left:30px; top:30px;}
+#section2 .frame .notice .more{position: absolute; top: 30px; right: 30px;}
+#section2 .frame .notice ul{padding: 30px; margin-top: 30px;}
+#section2 .frame .notice ul li{width: 100%; height: 30px; line-height: 34px;}
+#section2 .frame .notice ul li a{float: left; display: block; font-size: 14px; }
+#section2 .frame .notice ul li a:hover{text-decoration: underline;}
+
+#section2 .frame .notice ul li span{float: right; font-size: 12px; color: #888; }
+
+
+#section2 .frame .rewards{width: 635px; height: 250px; float: left;margin-left: 16px; position: relative; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2); border-top-right-radius: 125px; border-bottom-right-radius: 125px;}
+#section2 .frame .rewards span.slash{background: url('../images/line.png') no-repeat; width: 1px; height: 100px; position: absolute; left: 260px; top: 94px;}
+#section2 .frame .rewards .tit{ background: url('../images/STARBUCKS-REWARDS.png') no-repeat left; width: 250px; height: 15px;  position: absolute; left:30px; top:30px;}
+#section2 .frame .rewards .more{position: absolute; top: 30px; right: 172px;}
+#section2 .frame .rewards .leftTxt{float: left; width: 202px; height: 120px; margin-top: 84px; margin-left: 30px;  position: relative;}
+#section2 .frame .rewards .leftTxt .top{font-size: 14px; color: #fff;  text-align: right;}
+#section2 .frame .rewards .leftTxt .top>strong{font-size: 30px; font-weight: 500; line-height: 62px; color: #fff;}
+#section2 .frame .rewards .leftTxt .joinBtn{float: left; width: 110px; height: 28px; line-height: 28px; border-radius: 50px; border: 1px solid #fff; box-sizing: border-box; margin-top: 15px;}
+#section2 .frame .rewards .leftTxt .joinBtn a{color: #fff; font-size: 12px; text-align: center; display: block; width: 100%; height: 100%; line-height: 26px; }
+#section2 .frame .rewards .leftTxt .logBtn{float:right; margin-left: 10px; width: 80px; height: 28px; background: #fff; border-radius: 50px; margin-top: 15px;}
+#section2 .frame .rewards .leftTxt .logBtn a{ font-size: 12px; text-align: center; display: block; width: 100%; height: 100%; line-height: 28px; }
+ 
+#section2 .frame .rewards .rightTxt{float: right; width: 172px; height: 120px; margin-top: 84px; margin-right: 172px;}
+#section2 .frame .rewards .rightTxt .top{font-size: 14px; color: #fff; line-height: 24px;}
+#section2 .frame .rewards .rightTxt .top>strong{font-weight: normal; color: #d5af18;}
+#section2 .frame .rewards .rightTxt .giftBtn{width: 172px; height: 28px; border: 1px solid #fff; box-sizing: border-box; border-radius: 50px; margin-top: 25px;}
+#section2 .frame .rewards .rightTxt .giftBtn a{font-size: 12px; color: #fff; display: block; text-align: center; line-height: 26px;}
+
+#section2 .banner{width: 1100px; height: 250px; margin: 16px auto; border-top-left-radius: 125px; border-bottom-left-radius: 125px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden;}
+#section2 .banner #sliderList{width: 100%; min-width: 1100px;}
+#section2 .banner .slider{width: 100%; height: 100%;}
+#section2 .banner ul.slideImg{width: 300%; height: 100%;}
+#section2 .banner ul.slideImg li{float: left; width: 33.3333%;position: relative;}/*position : relative 해야 옆으로 공백없음*/
+#section2 .banner ul.slideImg li img{width: 100%;}
+
+
+/* 인디케이터 */
+#section2 .banner .indicator{width: 88px; height: 22px; background: rgba(0, 0, 0, 0.4); border-radius: 50px; display: flex; justify-content: space-evenly; position: absolute; left: 50%; bottom: 3%; transform: translate(-50%,0);}
+#section2 .banner .indicator span{padding-top: 7px; cursor: pointer;}
+#section2 .banner .indicator ul.pagination{clear: both; width: 41px; height: 22px; display: flex; justify-content: space-between;}
+#section2 .banner .indicator ul.pagination li a{background: url('../images/dot1.png') no-repeat; background-position: 50%,0; width: 5px;height: 22px; float: left; cursor: pointer;}
+#section2 .banner .indicator ul.pagination li.on a{background: url('../images/dot2.png') no-repeat; background-position: 50%,0; width: 10px; height: 22px;}
+#section2 .banner .btn_auto{background: url('../images/play.png') no-repeat; background-position: center; width: 6px; height: 7px; position: absolute; left: 55%; bottom: 6%; transform: translate(-50%,0);} 
+#section2 .banner .btn_auto.pause{background: url('../images/pause.png') no-repeat;}
+
+
+
+
+/* section3 - 메뉴 */
+#section3{width: 100%; height: 2012px;} 
+#section3 .favorite{background: url('../images/pick_your_favorite.png') no-repeat center; background-size: 70%; width: 398px; height: 302px; margin: 50px auto 0;}
+/* 공통 */
+#section3 ul.contents{width: 100%; height: 1470px; margin-top: 0px;}
+#section3 ul li{width: 100%; height: 294px; position: relative;}
+#section3 ul li .txt{color: #fff; margin-top: 15px;}
+#section3 ul li .txt .topTxt{font-weight: 600; font-size: 14px; line-height: 24px;}
+#section3 ul li .txt .bottomTxt{font-weight: 200; font-size: 12px; line-height: 22px;}
+#section3 ul li .btn{width: 138px; height: 28px; border-radius: 50px; border: 1px solid #fff; box-sizing: border-box; margin-top: 28px; transition: 0.4s; position: relative; overflow: hidden;}
+#section3 ul li .btn a{color: #fff;display: block; font-size: 12px; width: 100%; height: 100%; text-align: center; line-height: 26px; transform: translate3d(0,0,0); transition: 0.4s;} 
+#section3 ul li .btn a span{font-size: 20px; position: absolute; top: 50%; transform: translate3d(50px,-50%,20px); transition: 0.4s;}
+#section3 ul li .btn:hover a{transform: translate3d(-5px,0,0);}
+#section3 ul li .btn:hover a span{transform: translate3d(5px,-50%,0);}
+
+
+/* 텍스트 위치 및 정렬 */
+#section3 ul li.lCon .con{position: absolute; top: 50%; right: 744px; transform: translate(0,-50%); text-align: right; }
+#section3 ul li.lCon .tit img,
+#section3 ul li.lCon .btn {margin-left: auto; }
+#section3 ul li{position: relative;}
+#section3 ul li.rCon .con{position: absolute; top: 50%; left: 744px; transform: translate(0,-50%);}
+/* 배경사진 삽입 */
+#section3 ul li.drinks{background: url('../images/menu_bimg1.png') no-repeat left;}
+#section3 ul li.foods{background: url('../images/menu_bimg2.png') no-repeat right;}
+#section3 ul li.goods{background: url('../images/menu_bimg3.png') no-repeat left;}
+#section3 ul li.cards{background: url('../images/menu_bimg4.png') no-repeat right;}
+#section3 ul li.menuStory{background: url('../images/menu5.png') no-repeat left top;}
+
+
+
+/* section4 - 리저브 매거진 */
+#section4{background: url('../images/wood.png') no-repeat center;  background-size: 100%; width: 100%; height: 800px; position: relative;}
+#section4 .title{background: url('../images/RESERVE\ MAGAZINE.png') no-repeat center bottom; width: 100%; padding-top: 200px; }
+#section4 .subTitle{ color: #fff; font-size: 14px; font-weight: 200; margin-top: 20px; line-height: 14px; text-align: center; }
+#section4 .more{display: block; background: url('../images/white_plus.png') no-repeat center; width: 30px;height: 30px; position: absolute; right: 0; top: 170px;}
+#section4 ul{margin-top: 66px; display: flex; justify-content: space-between; width: 100%;}
+#section4 ul li{width: 263px; overflow: hidden; float: left; cursor: pointer;}
+#section4 ul li:hover .imgBox img{transform: scale(1.05);}
+
+#section4 ul li .imgBox{width: 100%; height: 263px; overflow: hidden; }
+#section4 ul li .imgBox img{width: 100%; height: 100%; transition: 0.4s;}
+#section4 ul li .txtBox{width: 100%; height: 77px; background: #fff;}
+#section4 ul li .txtBox a{font-size: 14px; text-align: center; line-height: 77px;}
+
+
+/* section5 - 매장검색 */
+#section5{width: 100%; height: 732px;}
+#section5 .title{background: url('../images/SEARCHING-STORE.png') no-repeat bottom;  width: 100%; padding-top: 200px; }
+#section5 .subTitle{color: #fff; font-size: 14px; font-weight: 200; margin-top: 20px; line-height: 14px; text-align: center;}
+#section5 .more{display: block; background: url('../images/white_plus.png') no-repeat center; width: 30px;height: 30px; position: absolute; right: 0; top: 170px;}
+
+#section5 .search{width: 728px; height: 50px; border-radius: 25px; background: #fff; margin: 66px auto 30px; position: relative;}
+#section5 .search .inputTxt{width: 600px; height: 30px; border: none; position: absolute; left: 45px; top: 10px; font-size: 16px; color: #333; outline: none;}
+#section5 .search input::placeholder{font-size: 16px; font-weight: 500; color: #007042;}
+#section5 .search .inputImg{position: absolute; right: 25px; top: 13px; }
+#section5 ul{width: 100%; display: flex; justify-content: space-between;}
+#section5 ul li{width: 356px; height: 230px; overflow: hidden; position: relative;}
+#section5 ul li a{width: 100%; height: 100%; display: block;}
+#section5 ul li a .blackBox{position: absolute; top: 0; left: 0; background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)); width: 100%; height: 120%;  transition: 0.4s; }
+#section5 ul li a .blackBox .subTxt{color: #fff; font-size: 14px; font-weight: 300; transform: translate3d(0,10px,0); line-height: 14px; position: absolute; left: 30px; top: 157px; opacity: 0; transition: 0.4s;} 
+#section5 ul li a .blackBox .mainTxt{color: #fff;font-size: 18px; font-weight: 600; line-height: 18px; position: absolute; left: 30px; top: 182px;}
+#section5 ul li a .blackBox .mainTxt img{float: right; margin-left: 15px; margin-top: 2px; opacity: 0; transition: .4s;}
+
+/* hover */
+#section5 ul li a:hover .blackBox{height: 100%;}
+#section5 ul li a:hover .blackBox .subTxt{transform: translate3d(0,0,0); opacity: 1;}
+#section5 ul li a:hover .blackBox .mainTxt img{opacity: 1;}
+
+
+/* footer */
+footer{width: 100%; height: 558px; color: #fff; background: #1b1a1a;}
+footer .inner{width: 1100px; height: 428px;}
+footer ul.awards{width: 100%; background: #272727; display: flex; justify-content: space-evenly; padding: 45px 0;}
+
+footer .bMenu{width: 100%; height:257px;}
+footer .bMenu .menuList{width: 821px; height: 100%; float: left;}
+footer .bMenu .menuList>ul{display: flex; justify-content: space-between; padding-top: 66px;}
+footer .bMenu .menuList>ul>li>ul>li{line-height: 24px;}
+footer .bMenu .menuList>ul>li>ul>li a{text-align: center; color: #b3b3b3; font-size: 12px;}
+footer .bMenu .menuList>ul>li>ul>li a:hover{text-decoration: underline;}
+footer .bMenu .menuList>ul>li>ul>li:first-child a{font-weight: 500; color: #fff; cursor:default;}
+footer .bMenu .menuList>ul>li>ul>li:first-child a:hover{text-decoration: none;}
+
+footer .bMenu .fBtn{width: 279px; height: 100%; float:  right; position: relative;}
+footer .bMenu .fBtn ul{position: absolute; right: 0;top: 66px;}
+footer .bMenu .fBtn ul li{width: 132px; height: 28px; border: 1px solid #fff; border-radius: 50px; margin-bottom: 15px;}
+footer .bMenu .fBtn ul li a{display: block; color: #fff; font-size: 12px; line-height: 26px; text-align: center; }
+
+footer .mbn{width: 100%; height:84px;}
+footer .mbn>ul{display: flex; justify-content: space-between; color: #b3b3b3; font-size: 12px;height: 100%; height: 42px; line-height: 42px;}
+footer .mbn>ul li:first-child a{ color: #fff; font-weight: 500;}
+footer .mbn>ul li a{display: block; font-size: 12px; color: #b3b3b3;}
+footer .mbn>ul li:hover a{text-decoration: underline;}
+footer .mbn .info{width: 100%; height: 42px;}
+footer .mbn .info ul{width: 728px; height: 42px; margin: 0 auto;display: flex; justify-content: space-between;}
+footer .mbn .info ul li{font-size: 12px; color: #b3b3b3; display: block; line-height: 42px;}
+footer .copyMenu{width: 100%; height:129px;}
+
+footer .copyright{width: 100%; height: 87px; position: relative;}
+footer .copyright p{font-size: 12px; color: #b3b3b3; line-height: 12px;  text-align: center; width: 100%; position: absolute; bottom: 20px;}
