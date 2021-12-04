@@ -36,7 +36,7 @@ header .menu .bottomMenu>ul{float: right; margin-right: -20px; margin-top:10px;}
 header .menu .bottomMenu>ul>li{float: left; }
 
 header .menu .bottomMenu>ul>li>a{font-size: 14px; font-weight: 500;  padding: 0 20px;height: 60px; line-height: 60px; }
-header .menu .bottomMenu>ul>li:hover>a{background:  rgba(255, 255, 255, 0.5); border-top-left-radius: 20px; border-top-right-radius: 20px; backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
+header .menu .bottomMenu>ul>li:hover>a{background:  rgba(255, 255, 255, 0.7); border-top-left-radius: 20px; border-top-right-radius: 20px; backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
 header .menu .bottomMenu>ul>li>a::after{content: '';display: block; width: 1%; height: 1px; background:#007042; transform: translate(50%,-1px);opacity: 0; transition: 0.2s; }
 header .menu .bottomMenu>ul>li:hover>a::after{opacity: 1; width: 100%; transform: translate(0,-1px);}
 
