@@ -6,26 +6,26 @@
 ul, li,h1,h2,h3,h4{margin: 0;padding: 0; list-style: none;}
 a,img{display: block; text-decoration: none; color: #333;}
 body{background: #252424; font-family: 'Noto Sans KR', sans-serif; }
-/* letter-spacing: -0.6px; */
+
 
 
 /* wrap */
-#wrap{width: 100%; height: 100%; position: relative;}
+#wrap{width: 100%; height: 100%;  min-width: 1366px; position: relative;}
 
 .inner{width: 1100px; height: 100%; margin: 0 auto; position: relative; min-width: 1100px;}
 
-header{width: 100%; height: 110px; z-index: 99; position: fixed; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px); border-bottom: 1.5px solid rgba(160, 160, 160, 0.4); box-sizing: border-box;} 
-header .headerInner{width: 1100px; height: 100%; margin: 0 auto; min-width: 1100px;}
+header{width: 100%; height: 110px; z-index: 99; position: sticky; top: 0; } 
+header .headerInner{width: 1100px; height: 100%;  margin: 0 auto; min-width: 1100px;}
 
 header .logo{ opacity: 1; width: 100px; height: 100%; float: left;}
-header .logo img{ padding-top: 17.5px;}
+header .logo img{ padding-top: 17.5px; }
 header .menu{ width: 1000px; height: 100%; float: right;}
 header .menu .topMenu{width: 1000px; height: 40px; }
 header .menu .topMenu ul{float: right; }
 header .menu .topMenu ul li{float: left;margin-left: 36px;  line-height: 40px;}
 header .menu .topMenu ul li a{display: block;  font-size: 11px;}
 header .menu .topMenu ul li.gnbSearch{ height: 40px; line-height: 40px;}
-header .menu .topMenu ul li.gnbSearch .inputTxt{width: 0px; padding: 0 15px; border-radius: 50px; border: none; height: 22px;margin-right: 14px;margin-top: 9px; color: #333; background: #fff; display: none; float: left; }
+header .menu .topMenu ul li.gnbSearch .inputTxt{width: 0px; padding: 0 15px; border-radius: 50px; border: none; height: 22px;margin-right: 14px;margin-top: 9px; color: #333; background: rgba(255, 255, 255, 0.7); display: none; float: left; }
 header .menu .topMenu ul li.gnbSearch .inputTxt::placeholder{font-size: 12px;}
 header .menu .topMenu ul li.gnbSearch .inputTxt:focus{outline: none;}
 header .menu .topMenu ul li.gnbSearch .inputImg{width: 14px; height: 14px;float: right; margin-top: 13px; }
@@ -36,24 +36,25 @@ header .menu .bottomMenu>ul{float: right; margin-right: -20px; margin-top:10px;}
 header .menu .bottomMenu>ul>li{float: left; }
 
 header .menu .bottomMenu>ul>li>a{font-size: 14px; font-weight: 500;  padding: 0 20px;height: 60px; line-height: 60px; }
-header .menu .bottomMenu>ul>li:hover>a{background:  rgba(255, 255, 255, 0.7); border-top-left-radius: 20px; border-top-right-radius: 20px; backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
+header .menu .bottomMenu>ul>li:first-child:hover>a{background: rgba(255, 255, 255, 0.55);}
+header .menu .bottomMenu>ul>li:hover>a{background:  rgba(255, 255, 255, 0.6); border-top-left-radius: 20px; border-top-right-radius: 20px; backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
 header .menu .bottomMenu>ul>li>a::after{content: '';display: block; width: 1%; height: 1px; background:#007042; transform: translate(50%,-1px);opacity: 0; transition: 0.2s; }
 header .menu .bottomMenu>ul>li:hover>a::after{opacity: 1; width: 100%; transform: translate(0,-1px);}
 
 /* full menu */
-header .bottomMenu ul.fullMenu{position: absolute; left: 0;top: 110px;height: auto; width: 100%;padding-bottom: 30px;
+ul.fullMenu{position: absolute; left: 0;top: 110px;height: auto; width: 100%;padding-bottom: 30px; overflow: hidden;  backdrop-filter: blur(40px) ;-webkit-backdrop-filter: blur(40px); 
   background:
-  radial-gradient(circle at 50% 0,
+  radial-gradient(circle at 65% 0,
     rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0) 70.71%),
+    rgba(255, 255, 255, 0) 70%),
   radial-gradient(circle at 6.7% 75%,
     rgba(191, 177, 158, 0.5),
-    rgba(179, 151, 159,0) 70.71%),
+    rgba(179, 151, 159,0) 50.71%),
   radial-gradient(circle at 97.3% 80%,
     rgba(223, 213, 199, 0.5),
-    rgba(152, 154, 182,0) 20.71%) rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 10px 10px 0px #1a1a1a29; border-bottom: 1px solid rgba(69, 69, 69, 0.5); z-index: 99; display: none;}
-header .bottomMenu ul.fullMenu .menuInner{width: 1100px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; min-width: 1100px;}
-header .bottomMenu ul.fullMenu .menuInner>li{float: left; }
+    rgba(152, 154, 182,0) 20%) rgba(255, 255, 255, 0.7); box-shadow: 0 10px 10px 0px #1a1a1a29; border-bottom: 1px solid rgba(69, 69, 69, 0.5); z-index: 99; transition:all 2s cubic-bezier(.1,1.65,.65,1); display: none;}
+ul.fullMenu .menuInner{width: 1100px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; min-width: 1100px;}
+ul.fullMenu .menuInner>li{float: left; }
 
 /* sub menu */
 ul.subMenu{margin-top: 20px;}
@@ -67,12 +68,14 @@ ul.giftCard li:nth-child(2) img{ width: 100%;  position: absolute; top: 20px;}
 ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left: 50%; transform: translate(-50%,0);}
 
 
+#blur{position: fixed; top: 0; background: rgba(255, 255, 255, 0.45);border-bottom: 1.5px solid rgba(160, 160, 160, 0.4); box-sizing: border-box; width: 100%; height: 110px;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 98;}
+
 /* section1 - 비디오 */
-#section1{width: 100%; height: auto;  position: relative; }
-#section1 video{width: 100%; height: 100%; opacity: 0.4;}
+#section1{width: 100%; height: auto;  position: absolute; top: 0;}
+#section1 video{width: 100%; height: 100%; opacity: 0.4; }
 #section1:after{content: ''; display: block; width: 100%; height: 140px; background:url('../images/gradient.png') repeat-x; position: absolute; bottom:0; left: 0;}
 #section1 span.comment{ background: url('../images/STARBUCKS\ KOREA.png') no-repeat center; width: 504px; height: 141px; display: block; position: absolute; top: 40%; left: 50%; transform: translate(-50%,-40%);}
-#section1 p{position: absolute; left: 50%; top:60%; transform: translate(-50%,-50%); color: rgba(255, 255, 255, 0.75); font-size: 16px;  line-height: -10px; text-align: center; font-weight: 300; line-height: 1.7; }
+#section1 p{position: absolute; left: 50%; top:60%; transform: translate(-50%,-50%); color: rgba(255, 255, 255, 0.75); font-size: 16px; letter-spacing: -0.4px; text-align: center; font-weight: 300; line-height: 1.7; }
 #section1 p strong{font-size: 23px; font-weight: 400;}
 
 
@@ -94,8 +97,8 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
            
 
 /* section2 - 게시판 */
-#section2{width: 100%; height: 600px;}
-#section2 .frame{width: 100%; height: 250px; border-top-right-radius: 125px; border-bottom-right-radius: 125px; margin-top: 200px; background: url('../images/frame.png') no-repeat center ; }
+#section2{width: 100%; height: 600px; margin-top: 820px; }
+#section2 .frame{width: 100%; height: 250px; border-top-right-radius: 125px; border-bottom-right-radius: 125px; background: url('../images/frame.png') no-repeat center ; }
 #section2 .frame .notice{width: 449px; height: 250px; position: relative; float: left; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);}
 #section2 .frame .notice .tit{ background: url('../images/NOTICE.png') no-repeat left; width: 150px; height: 15px;  position: absolute; left:30px; top:30px;}
 #section2 .frame .notice .more{position: absolute; top: 30px; right: 30px;}
@@ -125,7 +128,7 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 #section2 .frame .rewards .rightTxt .giftBtn{width: 172px; height: 28px; border: 1px solid #fff; box-sizing: border-box; border-radius: 50px; margin-top: 25px;}
 #section2 .frame .rewards .rightTxt .giftBtn a{font-size: 12px; color: #fff; display: block; text-align: center; line-height: 26px;}
 
-#section2 .banner{width: 1100px; height: 250px; margin: 16px auto; border-top-left-radius: 125px; border-bottom-left-radius: 125px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; }
+#section2 .banner{width: 1100px; height: 250px; margin: 16px auto; border-top-left-radius: 125px; border-bottom-left-radius: 125px; box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden;  z-index: 0;}
 #section2 .banner #sliderList{width: 100%; min-width: 1100px; min-width: 1100px; }
 #section2 .banner .slider{width: 100%; height: 100%;}
 #section2 .banner ul.slideImg{width: 300%; height: 100%;}
@@ -146,7 +149,7 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 
 
 /* section3 - 메뉴 */
-#section3{width: 100%; height: 2012px;} 
+#section3{width: 100%; height: 1900px;} 
 #section3 .favorite{background: url('../images/pick_your_favorite.png') no-repeat center; background-size: 70%; width: 398px; height: 302px; margin: 50px auto 0;}
 /* 공통 */
 #section3 ul.contents{width: 100%; height: 1470px; margin-top: 0px;}
@@ -177,7 +180,7 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 
 
 /* section4 - 리저브 매거진 */
-#section4{background: url('../images/wood.png') no-repeat center;  background-size: 100%; width: 100%; height: 800px; position: relative;}
+#section4{background: url('../images/wood.png') no-repeat center;  background-size: 100% 98%; width: 100%; height: 800px; position: relative;}
 #section4 .title{background: url('../images/RESERVE\ MAGAZINE.png') no-repeat center bottom; width: 100%; padding-top: 200px; }
 #section4 .subTitle{ color: #fff; font-size: 14px; font-weight: 200; margin-top: 20px; line-height: 14px; text-align: center; }
 #section4 .more{display: block; background: url('../images/white_plus.png') no-repeat center; width: 30px;height: 30px; position: absolute; right: 0; top: 170px;}
@@ -216,9 +219,9 @@ ul.giftCard li:nth-child(3) img{width: 82%; position: absolute; top:240px; left:
 
 
 /* footer */
-footer{width: 100%; height: 558px; color: #fff; background: #1b1a1a;}
-footer .inner{width: 1100px; height: 428px;min-width: 1100px;}
-footer ul.awards{width: 100%; background: #272727; display: flex; justify-content: space-evenly; padding: 45px 0;}
+footer{width: 100% ; height: 558px; color: #fff; background: #1b1a1a; }
+footer .inner{width: 1100px; height: 428px;min-width: 1100px; margin: 0 auto;}
+footer ul.awards{width: 100% ; background: #272727; display: flex; justify-content: space-evenly; padding: 45px 0;}
 
 footer .bMenu{width: 100%; height:257px;}
 footer .bMenu .menuList{width: 821px; height: 100%; float: left;}

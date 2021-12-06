@@ -2,7 +2,7 @@ $(function(){
 
 // menu
 $('.bottomMenu>ul>li>a').mouseenter(function(){
-   $(this).siblings('.fullMenu').stop().slideDown(400)
+   $(this).siblings('.fullMenu').stop().slideDown(500)
 });
 $('.bottomMenu>ul>li').mouseleave(function(){
    $('.fullMenu',this).stop().hide()
@@ -30,4 +30,6 @@ $(window).scroll(function(){
          $('.scroll').fadeIn(200)
       }
 });
-})
+
+
+});
