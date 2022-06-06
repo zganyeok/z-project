@@ -27,8 +27,7 @@ var img2 = document.querySelector("#after .img");
 var img3 = document.querySelectorAll("#menu .fadein");
 var img4 = document.querySelector("#cabinet .img");
 
-var hhh = 12 * $(window).height();
-mHtml.animate({scrollTop :hhh},10);
+mHtml.animate({scrollTop :0},10);
 
 $(window).on("wheel", function(e) {
     if(mHtml.is(":animated")) return;
