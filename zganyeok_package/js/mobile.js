@@ -1,7 +1,5 @@
 $(function(){
-window.addEventListener("wheel",function(e){
-    e.preventDefault();
-},{passive : false});
+
 var mHtml = $("html");
 var page = 1;
 var bb = document.querySelector(".bg_blue");
