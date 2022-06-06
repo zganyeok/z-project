@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pen';
+    src: url('../fonts/Felicia-qmJ5.ttf') format('truetype');
+}
+
+
+/* reset */
+*{margin: 0;padding: 0;}
+ul, li,h1{margin: 0;padding: 0; list-style: none;}
+a,img{display: block; text-decoration: none; color: #333;}
+body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: -0.01em; background: radial-gradient(50% 50% at 50% 50%, #262626 0%, #262626 0.01%, #181818 100%);}
+
+
+
+/* wrap */
+#wrap{width: 100%; height: 100%; min-height: 100vh;  min-width: 1200px;  background: url('../images/wall.jpg') no-repeat center; background-size: 100% 100%; overflow: hidden;position: relative;}
+header{width: 100%; height: 50px; z-index: 99999; position:fixed; background: linear-gradient( #111111c0 0%,#1111110e 80%, #11111100 100%);}
+header .back{width: 30px;height: 30px; background: url('../images/back.png') no-repeat; background-size: contain; position: absolute; left: 15px; top: 15px;}
+header .back a{display: block; width: 100%; height: 100%;}
+header .close{width: 30px;height: 30px; background: url('../images/close.png') no-repeat; background-size: contain; position: absolute; top: 15px; right: 15px; cursor: pointer; display: none;}
+
+
+.wall{width: 100%;height: 100%; }
+/* 스티커 */
+.draggable{position: absolute; cursor:grab;}
+.draggable:active{cursor: grabbing;}
+
+.s1{width: 300px; height: auto; top: 5%; right: 22%;}
+.s2{width: 220px; height: 220px; bottom:8%; right: 5%;}
+.s3{width: 200px; height: auto; top: 5%; right: 5%;}
+.s4{width: 150px; height: auto; top: 32%; left: 44.8%;}
+.s5{width: 280px; height: auto; top:56%; left: 40.2%;}
+.s6{width: 280px; height: 132px; bottom: 8%; right: 24%; }
+.s7{width: 200px; height: auto; top: 36%; right: 5%; }
+.s8{width: 300px; height: 100px; bottom: 8%; left: 32%; }
+.s9{width: 260px; height: auto; top: 9%; left: 4%; }
+.s10{width: 260px; height: auto; top: 24%; left: 22%;  }
+.s11{width: 100px; height: auto; top: 54%; right: 31%; }
+.s12{width: 100px; height: auto; top: 56%; right: 23%; }
+
+.draggable img{width: 100%; }
+
+/* 설명 */
+.exp{background: rgba(26, 26, 26, 0.7); backdrop-filter: blur(25px); width: 100%; height: 100vh; position: relative; z-index: 99998;display: none;}
+.exp .inner{width: 1200px; height: 100%;  position: relative; margin: 0 auto; }
+
+.exp .logo{width: 300px;  float: left; position: relative; top: 50%; transform: translate(0,-50%); }
+.exp .text{width: 900px;  float: left; position: relative; top: 50%; transform: translate(0,-50%); color: #fff;border-left: 1px solid rgb(97, 97, 97); box-sizing: border-box;}
+
+
+/* 미스터 프링글스 로고 */
+.exp1 .logo{height: 340px;}
+.exp1 .text{height: 340px;}
+.exp1 .logo img{width: 240px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 120px;}
+
+
+.exp1 .text h1{font-size: 26px;  margin-left: 60px; line-height: 40px; height: 40px;}
+.exp1 .text .img{width: 100%; height:240px; margin-left: 100px;}
+.exp1 .text p.bottom{height: 60px; font-size: 16px; font-weight: 300; line-height: 1.8;  margin-left:60px;}
+
+.exp1 .text .img img:nth-child(1){height: 155px; margin-top: 50px; float: left;}
+.exp1 .text .img img:nth-child(3){height: 200px; margin-top: 10px; float: left;}
+.exp1 .text .img .plus{width: 30px; height: 30px; background: url('../images/stickers/exp/plus.png') no-repeat center; background-size: contain; margin: 105px 30px 0 30px; float: left;}
+
+
+/* 강원천문대 로고 */
+.exp2 .logo{height: 380px;}
+.exp2 .text{height: 380px;}
+.exp2 .logo img{width: 240px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 120px;}
+
+
+.exp2 .text h1{font-size: 26px;  margin-left: 60px;  line-height: 40px; height: 40px;}
+.exp2 .text .img{width: 100%; height: 280px; margin-left: 60px;}
+
+
+.exp2 .text .img ul{ width: 100%; height: 100%;}
+.exp2 .text .img ul li{float: left; width: 300px;}
+.exp2 .text .img ul li img{height:140px; margin: 40px auto;}
+.exp2 .text .img ul li p{font-weight: 300; font-size: 16px; line-height: 1.8; margin-top: 40px;}
+.exp2 .text .img ul span.arrow{width: 70px; height: 30px; float: left; margin: 90px 30px; background: url('../images/stickers/exp/arrow.png') no-repeat center; background-size: contain;}
+
+
+/* 프로닥터 로고 */
+.exp3 .logo{height: 380px;}
+.exp3 .text{height: 380px;}
+.exp3 .logo img{width: 240px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 120px;}
+
+
+.exp3 .text h1{font-size: 26px;  margin-left: 60px; line-height: 40px; height: 40px;}
+.exp3 .text .img{width: 100%; height:280px; margin-left: 60px;}
+.exp3 .text p.bottom{height: 60px; font-size: 16px; font-weight: 300; line-height: 1.8;  margin-left:60px;}
+
+.exp3 .text .img ul{float: left; width: 500px; height: 100%; clear: both;}
+.exp3 .text .img ul>li{float: left; width: 140px; height: 100%;}
+.exp3 .text .img ul>li img{width: 50px; margin: 84px auto 23px;}
+.exp3 .text .img ul>li p{font-size: 12px; font-weight: 300; text-align: center; }
+.exp3 .text .img ul .plus{width: 30px; height: 30px; background: url('../images/stickers/exp/plus.png') no-repeat center; background-size: contain; margin-top: 135px; float: left;}
+
+.exp3 .text .img span.arrow{width: 70px; height: 30px; float: left; margin: 135px 30px 0 0; background: url('../images/stickers/exp/arrow.png') no-repeat center; background-size: contain;}
+.exp3 .text .img>img{width: 150px; float: left; margin-top: 40px;}
+
+
+/* 파비콘 디자인 */
+.exp4 .inner{width: 800px; height: 524px; top: 50%; transform: translate(0,-50%);}
+.exp4 h1{ font-size: 26px; color:#fff; line-height: 40px;}
+.exp4 ul{height: 400px;}
+.exp4 li{width: 310px; float: left;}
+.exp4 li img{height: 240px; margin: 35px auto; }
+.exp4 li p{color:#fff; font-weight: 300;font-size: 16px; width: 100%; text-align: center; line-height: 1.8;}
+.exp4 li p strong{text-align: center; }
+.exp4 p.top{color: #fff; font-size: 16px; margin-top: 20px; font-weight: 300; line-height: 1.7;}
+.exp4 .arrow{width: 70px; height: 30px; float: left; margin: 140px 30px; background: url('../images/stickers/exp/arrow.png') no-repeat center; background-size: contain;}
+
+
+
+/* 옷 브랜드 태그 */
+.exp5 .logo{height: 300px; width: 350px;}
+.exp5 .text{height: 300px; width: 850px;}
+.exp5 .logo img{width: 300px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 150px;}
+
+
+.exp5 .text h1{font-size: 26px;  margin-left: 60px; line-height: 40px; height: 40px;}
+.exp5 .text .img{width: 100%; height:200px; margin-left: 60px;}
+.exp5 .text p.bottom{height: 60px; font-size: 16px; font-weight: 300; line-height: 1.8;  margin-left:60px;}
+
+.exp5 .text .img img{height: 70px; margin-top: 65px; float: left;}
+.exp5 .text .img .and{font-family: 'pen'; width: 30px; height: 44px; color: #F2B318; line-height: 40px; font-size: 40px; margin: 76px 30px 0 30px; float: left;}
+
+
+
+
+/* 홈택스 로고 */
+.exp6 .logo{height: 310px;}
+.exp6 .text{height: 310px;}
+.exp6 .logo img{width: 240px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 120px;}
+
+
+.exp6 .text h1{font-size: 26px;  margin-left: 60px;  line-height: 40px; height: 40px;}
+.exp6 .text .img{width: 800px; height: 300px; margin-left: 60px;}
+
+.exp6 .text .img ul{ width: 100%; height: 100%;}
+.exp6 .text .img ul li{float: left; width: 330px;}
+.exp6 .text .img ul li img{height: 100px; margin: 40px auto;}
+.exp6 .text .img ul li p{font-weight: 300; font-size: 16px; line-height: 1.8; margin-top: 40px;}
+.exp6 .text .img ul span.arrow{width: 70px; height: 30px; float: left; margin: 75px 30px; background: url('../images/stickers/exp/arrow.png') no-repeat center; background-size: contain;}
+
+
+
+
+
+/* 화장실 픽토그램 */
+.exp7 .logo{height: 200px;}
+.exp7 .text{height: 200px;}
+.exp7 .logo img{width: 240px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 120px;}
+
+
+.exp7 .text h1{font-size: 26px;  margin-left: 60px; line-height: 40px; height: 40px;}
+
+.exp7 .text p.bottom{height: 60px; font-size: 16px; font-weight: 300; margin-top: 40px; line-height: 1.8;  margin-left:60px;}
+
+
+/* moon 로고 */
+.exp8 .logo{height: 310px;}
+.exp8 .text{height: 310px;}
+.exp8 .logo img{width: 240px; position: absolute; transform: translate(-50%,-50%); top: 50%; left: 120px;}
+
+
+.exp8 .text h1{font-size: 26px;  margin-left: 60px;  line-height: 40px; height: 40px;}
+.exp8 .text .img{width: 800px; height: 300px; margin-left: 60px;}
+
+.exp8 .text .img ul{ width: 100%; height: 100%;}
+.exp8 .text .img ul li{float: left; width: 330px;}
+.exp8 .text .img ul li:first-child img{height: 200px; margin: 0 auto;}
+.exp8 .text .img ul li:first-child  p{font-weight: 300; font-size: 16px; line-height: 1.8; }
+
+.exp8 .text .img ul li:last-child img{height: 50px; margin: 70px auto;}
+.exp8 .text .img ul li:last-child p{font-weight: 300; font-size: 16px; line-height: 1.8; margin-top: 80px;}
+.exp8 .text .img ul span.arrow{width: 70px; height: 30px; float: left; margin: 75px 30px; background: url('../images/stickers/exp/arrow.png') no-repeat center; background-size: contain;}
+
+
+
+/* 양순 울쁘 */
+.exp9 .inner{width: 800px; height: 524px; top: 50%; transform: translate(0,-50%);}
+.exp9 h1{ font-size: 26px; color:#fff; line-height: 40px;}
+.exp9 ul{height: 400px;}
+.exp9 li{width: 300px; float: left;}
+.exp9 li img{height: 280px; margin: 25px auto; }
+.exp9 li p{color:#fff; font-weight: 300;font-size: 16px; width: 100%; text-align: center; line-height: 1.8;}
+.exp9 li p strong{text-align: center; }
+.exp9 p.top{color: #fff; font-size: 16px; margin-top: 20px; font-weight: 300; line-height: 1.7;}
+.exp9 .arrow{width: 70px; height: 30px; float: left; margin: 150px 30px; background: url('../images/stickers/exp/arrow.png') no-repeat center; background-size: contain;}
+
+
+/* 강낭 완두 */
+.exp11 .inner{width: 800px; height: 524px; top: 50%; transform: translate(0,-50%);}
+.exp11 h1{ font-size: 26px; color:#fff; line-height: 40px;}
+.exp11 ul{ height: 400px;}
+.exp11 li{width: 400px; float: left;}
+.exp11 li img{width: 50%; margin: 50px auto 36px; padding-left: 20px;}
+.exp11 li:last-child img{margin: 65px auto 51px; padding-left: 0;}
+.exp11 li p{color:#fff; font-weight: 300;font-size: 16px; width: 100%; text-align: center; line-height: 1.8;}
+.exp11 li p strong{text-align: center; }
+.exp11 p.top{color: #fff; font-size: 16px; margin-top: 20px; font-weight: 300; line-height: 1.7;}
+
+/*커서 텍스트 */
+.cursor_text{width: 280px; height: 36px; text-align: center; line-height: 36px; background: #00000050; border-radius: 10px; font-size: 12px; color: rgba(255, 255, 255, 0.8); position: absolute; top: -100px; left: -100px; transform: translate(40px,40px); }

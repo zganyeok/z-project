@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zganyeok package - drawings</title>
+    <link rel="shortcut icon" href="images/fv.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/drawing.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>   <!-- 드래그제이쿼리 -->
+
+
+    <script>
+        // ==============drag==============
+    $(function(){
+
+    $(".draggable").draggable();
+
+        // ==============z-index==============
+    var plusZ=0;
+    $(".draggable").mousedown(function(){
+    plusZ+=1;
+    this.style.zIndex=plusZ;
+
+
+    });
+
+
+
+    });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="back"><a href="menu.html"></a></div>
+        </header>
+        <div class="wall">
+            <ul>
+                <li class="d1 draggable move"><img src="images/drawings/d1.jpg" alt="히스레저1"></li>
+                <li class="d2 draggable move"><img src="images/drawings/d2.jpg" alt="히스레저2"></li>
+                <li class="d3 draggable move"><img src="images/drawings/d3.jpg" alt="여자친구"></li>
+                <li class="d4 draggable move"><img src="images/drawings/d4.jpg" alt="백예린1"></li>
+                <li class="d5 draggable move"><img src="images/drawings/d5.jpg" alt="백예린2"></li>
+                <li class="d6 draggable move"><img src="images/drawings/d6.jpg" alt="데일리룩"></li>
+                <li class="d7 draggable move"><img src="images/drawings/d7.jpg" alt="라이더"></li>
+                <li class="d8 draggable move"><img src="images/drawings/d8.jpg" alt="자화상"></li>
+           
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
