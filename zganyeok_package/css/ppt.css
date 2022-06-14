@@ -30,8 +30,8 @@ header .back a{display: block; width: 100%; height: 100%;}
 .text li a.dw_btn:hover{background: #fff; color: #333;}
 .text li strong{color: #F2B318;}
 
-.thumbnail{width: 100%; height: 170px; overflow-x: hidden; position: absolute; bottom: -120px; left: 0; z-index: 3; transform: translateY(0); transition: all 0.4s;}
-.thumbnail:hover{transform: translateY(-120px);}
+.thumbnail{width: 100%; height: 23%; overflow-x: hidden; position: absolute; bottom: -16%; left: 0; z-index: 3; transform: translateY(0); transition: all 0.4s;}
+.thumbnail:hover{transform: translateY(-70%);}
 
 
 ul.ppt_list{ width: 2750px; height: 100%; margin-left: 15px; transition: all 0.8s;}

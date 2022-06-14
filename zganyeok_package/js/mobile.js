@@ -1,7 +1,7 @@
 $(function(){
-window.addEventListener("wheel",function(e){
-    e.preventDefault();
-},{passive : false});
+// window.addEventListener("wheel",function(e){
+//     e.preventDefault();
+// },{passive : false});
 var mHtml = $("html");
 var page = 1;
 var bb = document.querySelector(".bg_blue");
@@ -26,6 +26,7 @@ var img1 = document.querySelector("#before .img");
 var img2 = document.querySelector("#after .img");
 var img3 = document.querySelectorAll("#menu .fadein");
 var img4 = document.querySelector("#cabinet .img");
+var num = document.querySelector(".number");
 
 mHtml.animate({scrollTop :0},10);
 
@@ -47,7 +48,7 @@ $(window).on("wheel", function(e) {
                 $(gif).fadeOut();
                 $(whyH1).removeClass("colorOn");
                 $(whyP).removeClass("colorOn");
-     
+                $(num).text("1 / 13").css("color","#fff");
                 };
     if(page == 2){
                 $(bw).fadeIn(700);
@@ -56,10 +57,14 @@ $(window).on("wheel", function(e) {
                     $(gif).fadeIn(700);
                     $(whyH1).addClass("colorOn");
                     $(whyP).addClass("colorOn");
+                    $(num).text("2 / 13").css("color","#fff");
                 }
                 fadeVar = setTimeout(fade,5000);
+                $(num).text("2 / 13").css("color","#666");
                 }else{
-                    clearTimeout(fadeVar);};
+                    clearTimeout(fadeVar);
+                   
+                };
     if(page == 3){
                 $(gif).fadeOut();
                 $(whyH1).removeClass("colorOn");
@@ -77,7 +82,7 @@ $(window).on("wheel", function(e) {
                 setTimeout(function(){
                     $(up3).addClass("iconup3");
                 },1500);
-                
+                $(num).text("3 / 13").css("color","#fff");
             };
     if(page == 4){$(bw).fadeIn(700);
                   $(bc).fadeIn(700);
@@ -88,47 +93,63 @@ $(window).on("wheel", function(e) {
                 setTimeout(function(){
                     $(up5).addClass("nameup");
                 },1100);
+                $(num).text("3 / 13").css("color","#666");
             };
     if(page == 5){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
-                $(bc).fadeOut(700);};
+                $(bc).fadeOut(700);
+                $(num).text("5 / 13");
+            };
     if(page == 6){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
                 setTimeout(function(){
                     $(move).addClass("move");
                 },500);
+                $(num).text("6 / 13");
             };
     if(page == 7){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
                 setTimeout(function(){
                     $(img1).fadeIn(700);
-                },500);};
+                },500);
+                $(num).text("7 / 13");
+            };
     if(page == 8){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
                 setTimeout(function(){
                     $(img2).fadeIn(700);
-                },500);};
+                },500);
+                $(num).text("8 / 13");
+            };
     if(page == 9){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
                 setTimeout(function(){
                     $(img3).fadeIn(700);
-                },500);};
+                },500);
+                $(num).text("9 / 13");
+            };
     if(page == 10){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
             setTimeout(function(){
                     $(img4).fadeIn(700);
-                },500);};
+                },500);
+            $(num).text("10 / 13");
+        };
     if(page == 11){$(bw).fadeIn(700);
                 $(bb).fadeOut(700);
                 setTimeout(function(){
                     $(up6).addClass("thumbsup");
-                },700);};
+                },700);
+                $(num).text("11 / 13").css("color","#666");
+            };
             
     if(page == 12){$(bb).fadeIn(700);
                 $(bw).fadeOut(700);
                 setTimeout(function(){
                     $(up7).addClass("colorup");
-                },700);};
+                },700);
+                $(num).text("12 / 13").css("color","#fff");
+            };
     if(page == 13){$(bb).fadeIn(700);
                 $(bw).fadeOut(700);
                 setTimeout(function(){
@@ -143,6 +164,7 @@ $(window).on("wheel", function(e) {
                 setTimeout(function(){
                     $(up11).addClass("colorup");
                 },1900);
+                $(num).text("13 / 13").css("color","#fff");
             };
 
   
