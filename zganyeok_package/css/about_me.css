@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+
+@font-face {
+  font-family: 'pen';
+  src: url('../fonts/Felicia-qmJ5.ttf') format('truetype');
+}
+
+
 /* reset */
 *{margin: 0;padding: 0;}
 ul, li,h1{margin: 0;padding: 0; list-style: none;}
@@ -160,8 +167,8 @@ ul.typing6>li>a.tel{width: 56%; left: 0;}
 
 
 /* 토글버튼 */
-.switch{position: absolute; right: 0; top: 47%; transform: translateY(-50%); width: 52px; height: 100px; overflow: hidden; cursor: pointer; z-index: 11;}
-
+.switch{position: absolute; right: 0; top: 47%; transform: translateY(-50%); width: 52px; height: 140px; overflow: hidden; cursor: pointer; z-index: 11;}
+.switch p{position: absolute; bottom:0px; right: 2px; font-family: 'pen'; color: #F2B318; font-size: 18px; font-weight: 300;}
 input{width: 0;height: 0;opacity: 0; }
 .icon_box{transition: .4s; width: 100px; height: 100%;}
 input:checked + .icon_box{transform: translateX(-22px); }
