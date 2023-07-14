@@ -8,3 +8,12 @@
     background: #000;
   }
 }
+@media screen and (max-width: 430px) {
+  table {
+    zoom: 80%;
+    background: #000;
+  }
+  body {
+    background: #000;
+  }
+}
