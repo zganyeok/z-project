@@ -9,3 +9,5 @@
     background: #000;
   }
 }
+
+tr>td:hover{background:pink;}
